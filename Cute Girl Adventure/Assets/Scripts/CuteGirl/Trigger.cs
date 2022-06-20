@@ -23,8 +23,7 @@ public class Trigger : MonoBehaviour
         if (collision.tag == "Death")
         {
             Destroy(this.gameObject);
-            LevelManager.instance.Respawn();
-            Level1.instance.Respawn();
+            RespawnManager.instance.Respawn();
         }
         if (collision.tag == "Challenge")
         {

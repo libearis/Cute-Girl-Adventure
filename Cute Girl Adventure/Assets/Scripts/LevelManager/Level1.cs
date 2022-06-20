@@ -5,12 +5,7 @@ using Cinemachine;
 using UnityEngine.SceneManagement;
 public class Level1 : MonoBehaviour
 {
-    public static Level1 instance;
-
-    public Transform respawnPoint;
-
     public GameObject challengePanel;
-    public GameObject playerPrefab;
     public GameObject questionDisplay;
     public GameObject finalQuestionDisplay;
     public GameObject answerScrollPanel;
@@ -28,15 +23,8 @@ public class Level1 : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
         girlTrigger = GameObject.FindWithTag("Player").GetComponent<Trigger>();
         girlMovement = GameObject.FindWithTag("Player").GetComponent<GirlMovement>();
-    }
-
-    public void Respawn()
-    {
-        GameObject player = Instantiate(playerPrefab, respawnPoint.position, Quaternion.identity);
-        cam.Follow = player.transform;
     }
 
     private void FixedUpdate()
@@ -139,6 +127,6 @@ public class Level1 : MonoBehaviour
 
     public void LevelSelectionScreen()
     {
-        SceneManager.LoadScene("LevelSelection");
+        SceneManager.LoadScene("Challenge1");
     }
 }

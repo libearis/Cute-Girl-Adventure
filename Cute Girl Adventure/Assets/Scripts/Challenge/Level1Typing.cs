@@ -8,7 +8,12 @@ public class Level1Typing : MonoBehaviour
     public TextMeshProUGUI wordOutput = null;
     public TextMeshProUGUI timeCount;
     public int timeDecreaseEffect;
+    public SpriteRenderer backGround;
+    public GameObject victoryPanel;
+    public GameObject restartButton;
+
     private float timeRound = 30;
+    private bool gameIsFinished = false;
 
     private string remainingWord = string.Empty;
     public List<string> currentWord;
@@ -23,14 +28,15 @@ public class Level1Typing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckInput();
-        if (timeDecreaseEffect != 0)
+        if (timeDecreaseEffect != 0 && gameIsFinished == false)
         {
+            CheckInput();
             GameFinish();
         }
-        else
+        else if (gameIsFinished == false && timeDecreaseEffect == 0)
         {
             wordOutput.text = "Game Over";
+            restartButton.SetActive(true);
         }
     }
 
@@ -63,7 +69,7 @@ public class Level1Typing : MonoBehaviour
     {
         if (IsCorrectLetter(typedLetter))
         {
-            wordOutput.color = Color.white;
+            backGround.color = Color.green;
             RemoveLetter();
 
             if (IsWordComplete())
@@ -76,12 +82,15 @@ public class Level1Typing : MonoBehaviour
                 {
                     maxRand--;
                     currentWord.RemoveAt(rand);
-                    wordOutput.color = Color.white;
+                    backGround.color = Color.cyan;
                     SetCurrentWord();
                 }
             }
         }
-        else wordOutput.color = Color.red;
+        else
+        {
+            backGround.color = Color.red;
+        }
     }
 
     private bool IsCorrectLetter(string letter)
@@ -102,11 +111,9 @@ public class Level1Typing : MonoBehaviour
 
     private IEnumerator BackToWorld()
     {
-        wordOutput.fontSize = 45;
-        wordOutput.color = Color.white;
-        wordOutput.text = "Level Completed, back to the world....";
-
-        yield return new WaitForSeconds(4f);
+        gameIsFinished = true;
+        victoryPanel.SetActive(true);
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("Level1");
     }
 
@@ -115,5 +122,10 @@ public class Level1Typing : MonoBehaviour
         timeRound -= Time.deltaTime;
         timeDecreaseEffect = Mathf.RoundToInt(timeRound);
         timeCount.text = timeDecreaseEffect.ToString();
+    }
+
+    public void RestartingLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

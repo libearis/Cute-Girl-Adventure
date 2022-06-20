@@ -135,7 +135,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 7151840005660015798}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6ac07092273604f47b6d7be493f5b9bf, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -185,5 +185,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e314dc3bcbbebf4894aa9ca213de457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  challengePanel: {fileID: 4105769685579697729, guid: ec84f5e19591ccf498dde423150496b3,
-    type: 3}
+  challengePanel: {fileID: 0}
+  challengeAccepted: 0
+  answerCheck: 0
+  questionSee: 0
+  finalQuestionSee: 0
+  chestInteraction: 0
+  finalAnswer: 0
