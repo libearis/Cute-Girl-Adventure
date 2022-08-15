@@ -14,7 +14,6 @@ public class RespawnManager : MonoBehaviour
     void Awake()
     {
         instance = this;
-
     }
 
     public void Respawn()

@@ -1279,26 +1279,36 @@ MonoBehaviour:
   levelSelectionButton: {fileID: 849392873}
   retryChances: 2
   currentWord:
-  - cousin
-  - persist
-  - feature
-  - speech
-  - narrow
-  - assumption
-  - man
-  - expectation
-  - crutch
-  - leash
-  - insure
-  - mixture
-  - rugby
-  - toll
-  - photograph
-  - proclaim
-  - space
-  - book
-  - orbit
+  - wheel
+  - unlawful
+  - feel
+  - pierce
+  - duke
+  - possibility
+  - gasp
+  - establish
+  - lecture
+  - dialogue
+  - fair
+  - belief
+  - crack
+  - launch
+  - convention
+  - latest
+  - writer
+  - swarm
+  - texture
+  - barrel
+  - second
+  - strict
+  - momentum
+  - cooperation
+  - economic
+  - zone
+  - irony
+  - arrangement
   - place
+  - punish
   maxRand: 19
 --- !u!4 &970267989
 Transform:

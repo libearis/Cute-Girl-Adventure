@@ -8,11 +8,13 @@ public class Level1 : MonoBehaviour
     public GameObject challengePanel;
     public GameObject questionDisplay;
     public GameObject finalQuestionDisplay;
-    public GameObject answerScrollPanel;
+    public GameObject answerScrollDoor;
+    public GameObject answerScrollFinal;
     public GameObject congratulationPanel;
     public GameObject removeCrate;
 
     public int answerValue;
+    public bool doorDone = false;
 
     Trigger girlTrigger;
     GirlMovement girlMovement;
@@ -36,6 +38,7 @@ public class Level1 : MonoBehaviour
         {
             StartCoroutine(openingChest());
             AnsweringDoorQuestion();
+            AnsweringFinalQuestion();
         }
 
         if (girlTrigger == null)
@@ -90,6 +93,17 @@ public class Level1 : MonoBehaviour
             removeCrate.SetActive(false);
         }
     }
+    void AnsweringFinalQuestion()
+    {
+        if (girlTrigger.finalQuestionSee && answerValue == 6)
+        {
+            
+        }
+        else
+        {
+            Debug.Log("SALAHH!!!");
+        }
+    }
     IEnumerator openingChest()
     {
         if (girlTrigger.chestInteraction)
@@ -97,10 +111,20 @@ public class Level1 : MonoBehaviour
             chestOpeningAnimation.enabled = true;
 
             girlMovement.enabled = false;
+            if (!doorDone)
+            {
+                Chest.instance.DestroyCollider();
+                yield return new WaitForSeconds(1f);
+                answerScrollDoor.SetActive(true);
+                doorDone = true;
+            }
 
-            yield return new WaitForSeconds(1f);
-
-            answerScrollPanel.SetActive(true);
+            else if (doorDone)
+            {
+                yield return new WaitForSeconds(1f);
+                answerScrollFinal.SetActive(true);
+            }
+            
         }
     }
     public void ChallengeDone()
@@ -120,13 +144,13 @@ public class Level1 : MonoBehaviour
         girlMovement.enabled = true;
     }
 
-    public void TrueAnswerAdd()
+    public void TrueAnswerAdd(int value)
     {
-        answerValue = 30;
+        answerValue = value;
     }
 
-    public void LevelSelectionScreen()
+    public void LevelSelectionScreen(string screenName)
     {
-        SceneManager.LoadScene("Challenge1");
+        SceneManager.LoadScene(screenName);
     }
 }

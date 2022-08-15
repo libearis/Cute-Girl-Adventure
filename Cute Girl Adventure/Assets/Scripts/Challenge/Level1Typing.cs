@@ -7,36 +7,53 @@ public class Level1Typing : MonoBehaviour
 {
     public TextMeshProUGUI wordOutput = null;
     public TextMeshProUGUI timeCount;
+    public TextMeshProUGUI retryChancesText;
     public int timeDecreaseEffect;
     public SpriteRenderer backGround;
+
+
     public GameObject victoryPanel;
     public GameObject restartButton;
+    public GameObject retryChancesShow;
+    public GameObject levelSelectionButton;
+
+    public int retryChances;
 
     private float timeRound = 30;
     private bool gameIsFinished = false;
+    private bool gameStarted = false;
+    private bool isLosing = false;
 
     private string remainingWord = string.Empty;
     public List<string> currentWord;
 
     int rand;
-    public int maxRand = 19;
-    void Start()
+    public int maxRand;
+
+    private void Start()
+    {
+        retryChances = PlayerPrefs.GetInt("Health");
+        maxRand = currentWord.Count - 1;
+    }
+    public void StartingTheGame()
     {
         SetCurrentWord();
+        gameStarted = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timeDecreaseEffect != 0 && gameIsFinished == false)
+        if (timeDecreaseEffect != 0 && gameIsFinished == false && gameStarted)
         {
             CheckInput();
             GameFinish();
         }
-        else if (gameIsFinished == false && timeDecreaseEffect == 0)
+        else if (gameIsFinished == false && timeDecreaseEffect == 0 && gameStarted && !isLosing)
         {
-            wordOutput.text = "Game Over";
-            restartButton.SetActive(true);
+            isLosing = true;
+            gameIsFinished = true;
+            GameOver();
         }
     }
 
@@ -124,8 +141,34 @@ public class Level1Typing : MonoBehaviour
         timeCount.text = timeDecreaseEffect.ToString();
     }
 
+    void GameOver()
+    {
+        if (isLosing)
+        {
+            backGround.color = Color.grey;
+            wordOutput.text = "Game Over";
+            retryChancesShow.SetActive(true);
+            retryChancesText.text = "Retry Chances : " + retryChances.ToString();
+            if (retryChances == 0)
+            {
+                retryChances = 2;
+                PlayerPrefs.SetInt("Health", retryChances);
+                levelSelectionButton.SetActive(true);
+            }
+            else
+                restartButton.SetActive(true);
+        }
+    }
     public void RestartingLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        isLosing = false;
+        retryChances--;
+        PlayerPrefs.SetInt("Health", retryChances);
+        retryChancesShow.SetActive(false);
+    }
+    public void RefreshingPlayerPrefs()
+    {
+        SceneManager.LoadScene("AfterTyping");
     }
 }
