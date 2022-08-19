@@ -12,6 +12,10 @@ public class GirlMovement : MonoBehaviour
 
     private float moveSpeed = 3f;
     private bool isJumping = false;
+
+    public int maxJump = 1;
+    private int jumpCount;
+
     void Update()
     {
         Walking();
@@ -40,11 +44,11 @@ public class GirlMovement : MonoBehaviour
 
     private void Jumping()
     {
-        if (Mathf.Abs(rb.velocity.y) < 0.0001f && Input.GetKeyDown(KeyCode.Space))
+        if (jumpCount > 0 && Input.GetKeyDown(KeyCode.Space) && rb.velocity.y > -0.01f)
         {
-                rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-                animator.SetBool("isJumping", true);
-                isJumping = true;
+            rb.velocity = Vector2.up * jumpForce;
+            animator.SetBool("isJumping", true);
+            jumpCount -= 1;
         }
         else if (Mathf.Abs(rb.velocity.y) > 0.01f)
         {
@@ -54,9 +58,18 @@ public class GirlMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground" && rb.velocity.y == 0)
         {
-            isJumping = false;
+            jumpCount = maxJump;
+            animator.SetBool("isJumping", false);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground" && rb.velocity.y == 0)
+        {
+            jumpCount = maxJump;
             animator.SetBool("isJumping", false);
         }
     }

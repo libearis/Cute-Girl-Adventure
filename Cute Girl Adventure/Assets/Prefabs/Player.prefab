@@ -126,6 +126,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 7151840005660015796}
   animator: {fileID: 7151840005660015795}
   jumpForce: 12
+  maxJump: 1
 --- !u!61 &7151840005660015793
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -139,7 +140,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.35658503, y: 0}
+  m_Offset: {x: 0.17898512, y: -0.10447025}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -150,7 +151,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5816174, y: 4.54}
+  m_Size: {x: 2.730793, y: 4.3310595}
   m_EdgeRadius: 0
 --- !u!50 &7151840005660015794
 Rigidbody2D:
@@ -185,10 +186,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e314dc3bcbbebf4894aa9ca213de457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  challengePanel: {fileID: 0}
   challengeAccepted: 0
+  challengeAccepted2: 0
   answerCheck: 0
   questionSee: 0
   finalQuestionSee: 0
   chestInteraction: 0
   finalAnswer: 0
+  enteringCloudy: 0

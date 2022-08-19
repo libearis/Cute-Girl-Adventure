@@ -28,9 +28,4 @@ public class MainMenuParallax : MonoBehaviour
         if (temp > startpos + length) startpos += length;
         else if (temp < startpos - length) startpos -= length;
     }
-
-    public void Play()
-    {
-        SceneManager.LoadScene("Tutorial");
-    }
 }

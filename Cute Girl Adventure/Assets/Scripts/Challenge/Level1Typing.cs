@@ -5,10 +5,13 @@ using TMPro;
 using UnityEngine.SceneManagement;
 public class Level1Typing : MonoBehaviour
 {
+    public Animator sceneTransition;
+
     public TextMeshProUGUI wordOutput = null;
     public TextMeshProUGUI timeCount;
-    public TextMeshProUGUI retryChancesText;
+    public TextMeshProUGUI retryChancesText, wordLeft;
     public int timeDecreaseEffect;
+    public float timeRound = 30;
     public SpriteRenderer backGround;
 
 
@@ -19,13 +22,14 @@ public class Level1Typing : MonoBehaviour
 
     public int retryChances;
 
-    private float timeRound = 30;
+    
     private bool gameIsFinished = false;
     private bool gameStarted = false;
     private bool isLosing = false;
 
     private string remainingWord = string.Empty;
     public List<string> currentWord;
+    public string loadToScene;
 
     int rand;
     public int maxRand;
@@ -33,7 +37,7 @@ public class Level1Typing : MonoBehaviour
     private void Start()
     {
         retryChances = PlayerPrefs.GetInt("Health");
-        maxRand = currentWord.Count - 1;
+        maxRand = currentWord.Count;
     }
     public void StartingTheGame()
     {
@@ -41,6 +45,11 @@ public class Level1Typing : MonoBehaviour
         gameStarted = true;
     }
 
+    private void OnApplicationQuit()
+    {
+        retryChances = 2;
+        PlayerPrefs.SetInt("Health", retryChances);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -48,6 +57,7 @@ public class Level1Typing : MonoBehaviour
         {
             CheckInput();
             GameFinish();
+            wordLeft.text ="Word Left = " + currentWord.Count;
         }
         else if (gameIsFinished == false && timeDecreaseEffect == 0 && gameStarted && !isLosing)
         {
@@ -91,7 +101,7 @@ public class Level1Typing : MonoBehaviour
 
             if (IsWordComplete())
             {
-                if (maxRand == 0)
+                if (maxRand == 1)
                 {
                     StartCoroutine(BackToWorld());
                 }
@@ -128,10 +138,17 @@ public class Level1Typing : MonoBehaviour
 
     private IEnumerator BackToWorld()
     {
+        PlayerPrefs.DeleteAll();
+        retryChances = 2;
+        PlayerPrefs.SetInt("Health", retryChances);
         gameIsFinished = true;
         victoryPanel.SetActive(true);
+
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene("Level1");
+        sceneTransition.SetTrigger("End");
+
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(loadToScene);
     }
 
     private void GameFinish()
@@ -166,9 +183,5 @@ public class Level1Typing : MonoBehaviour
         retryChances--;
         PlayerPrefs.SetInt("Health", retryChances);
         retryChancesShow.SetActive(false);
-    }
-    public void RefreshingPlayerPrefs()
-    {
-        SceneManager.LoadScene("AfterTyping");
     }
 }

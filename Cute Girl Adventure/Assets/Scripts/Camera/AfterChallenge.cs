@@ -21,7 +21,7 @@ public class AfterChallenge : MonoBehaviour
     {
         girlMovement.enabled = false;
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(5.5f);
         girlMovement.enabled = true;
         Destroy(this.gameObject);
     }

@@ -7,7 +7,7 @@ public class ObstacleManager : MonoBehaviour
     [SerializeField] float speed;
     int damage = 1;
     girlStep girlStep;
-
+    public bool spawningLeft;
 
     private void Awake()
     {
@@ -16,15 +16,19 @@ public class ObstacleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
-        if(transform.position.x <= -10)
+        if(!spawningLeft)
         {
-            Destroy(gameObject);
+            transform.Translate(Vector2.left * speed * Time.deltaTime);
         }
+        else transform.Translate(Vector2.right * speed * Time.deltaTime);
 
-        if(girlStep.isGameOver || girlStep.isDone)
+        if (girlStep.isGameOver || girlStep.isDone)
         {
             speed = 0;
+        }
+        if(transform.position.x <= -10)
+        {
+            Destroy(this.gameObject);
         }
     }
 

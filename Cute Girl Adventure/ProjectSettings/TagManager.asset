@@ -3,7 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fox
+  - Death
+  - Hidden
+  - Ground
+  - Star
+  - Chest
+  - PuzzleBox
+  - Platforming
+  - Challenge
+  - FinalQuestion
+  - Question
+  - Challenge2
+  - Challenge3
   layers:
   - Default
   - TransparentFX

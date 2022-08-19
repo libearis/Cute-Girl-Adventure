@@ -6,6 +6,7 @@ using TMPro;
 
 public class girlStep : MonoBehaviour
 {
+    public string loadToScene;
     public bool isDone;
     [SerializeField] Spawning spawning;
     [SerializeField] private Vector2 targetPos;
@@ -13,24 +14,25 @@ public class girlStep : MonoBehaviour
     [SerializeField] private float minHeight;
     [SerializeField] private float maxHeight;
     [SerializeField] private float sidePower;
-    public int currentHealth = 3;
+    public int currentHealth = 3, retrychances;
 
-    public int starCount = 0;
-    public TextMeshProUGUI starText;
+    public int starCount = 0, maxStar;
+    public TextMeshProUGUI starText, retryText;
 
     public bool isFinish = false;
     public bool isGameOver = false;
 
     public GameObject[] healthIcon;
-    public GameObject panel;
+    public GameObject panel, homeButton;
     public GameObject winPanel; 
 
     public Animator anim;
+    public Animator sceneTransition;
 
     private void Awake()
     {
         starText = GameObject.Find("StarText").GetComponent<TextMeshProUGUI>();
-        Time.timeScale = 0;
+        retrychances = PlayerPrefs.GetInt("Health");
     }
 
     // Update is called once per frame
@@ -51,11 +53,23 @@ public class girlStep : MonoBehaviour
         if(currentHealth == 0)
         {
             panel.SetActive(true);
-            isGameOver = true;
-            anim.enabled = false;
+            if(retrychances == 0)
+            {
+                isGameOver = true;
+                anim.enabled = false;
+                homeButton.SetActive(true);
+                retryText.text = "Retry Chance = 0" ;
+
+            }
+            else
+            {
+                isGameOver = true;
+                anim.enabled = false;
+                retryText.text = "Retry Chance = " + retrychances.ToString();
+            }
         }
 
-        if(starCount == 20)
+        if(starCount == maxStar)
         {
             StartCoroutine(challengeDone());
         }
@@ -68,7 +82,9 @@ public class girlStep : MonoBehaviour
 
     public void ResetLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        retrychances--;
+        PlayerPrefs.SetInt("Health", retrychances);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -80,10 +96,6 @@ public class girlStep : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-    public void PlayButton()
-    {
-        Time.timeScale = 1;
-    }
 
     IEnumerator challengeDone()
     {
@@ -93,7 +105,10 @@ public class girlStep : MonoBehaviour
         spawning.enabled = false;
 
         yield return new WaitForSeconds(2f);
+        
+        sceneTransition.SetTrigger("End");
 
-        SceneManager.LoadScene("Tutorial Finish");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(loadToScene);
     }
 }

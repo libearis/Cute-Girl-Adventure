@@ -7,9 +7,9 @@ public class LevelSelection : MonoBehaviour
 {
     public GameObject completePrevText;
 
-    public void Level1()
+    public void LevelSelectionScreen(string levelName)
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(levelName);
     }
     public void LockedLevel()
     {
