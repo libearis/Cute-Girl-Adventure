@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class WinStar : MonoBehaviour
 {
+    GirlMovement girlMovement;
     Animator idleAnimation;
     public GameObject congratulationPanel;
 
     private void Start()
     {
+        girlMovement = GameObject.FindWithTag("Player").GetComponent<GirlMovement>();
         idleAnimation = GetComponent<Animator>();
     }
 
@@ -18,6 +20,7 @@ public class WinStar : MonoBehaviour
         {
             congratulationPanel.SetActive(true);
             idleAnimation.enabled = false;
+            girlMovement.enabled = false;
         }
     }
 }

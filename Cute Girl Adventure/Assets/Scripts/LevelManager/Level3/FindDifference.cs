@@ -31,9 +31,10 @@ public class FindDifference : MonoBehaviour
         {
             GameStart();
         }
-        else if (timeDecreaseEffect == 0)
+        else if (timeDecreaseEffect == 0 && isStarting)
         {
             GameOver();
+            isStarting = false;
         }
     }
 

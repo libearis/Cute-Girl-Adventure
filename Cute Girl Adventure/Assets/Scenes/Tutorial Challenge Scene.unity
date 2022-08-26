@@ -1866,7 +1866,7 @@ MonoBehaviour:
   - {fileID: 1181441233462889853, guid: 53f982fce1a1e604e8fc7628ff8325a8, type: 3}
   - {fileID: 691413982132727010, guid: 5c6c50b2cebb4194c948f9fad29871b4, type: 3}
   - {fileID: 1049282760782449917, guid: 12a64a752a16f004b9691ebbed6628ca, type: 3}
-  startTimeSpawn: 1
+  startTimeSpawn: 2
 --- !u!4 &1531566930
 Transform:
   m_ObjectHideFlags: 0
@@ -2136,9 +2136,11 @@ MonoBehaviour:
   maxHeight: 4
   sidePower: 2
   currentHealth: 3
+  retrychances: 0
   starCount: 0
   maxStar: 20
   starText: {fileID: 0}
+  retryText: {fileID: 0}
   isFinish: 0
   isGameOver: 0
   healthIcon:
@@ -2146,6 +2148,7 @@ MonoBehaviour:
   - {fileID: 1984324505}
   - {fileID: 1920277897}
   panel: {fileID: 1910308817}
+  homeButton: {fileID: 0}
   winPanel: {fileID: 1029668442}
   anim: {fileID: 1732703081}
   sceneTransition: {fileID: 181066540}

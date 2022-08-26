@@ -627,11 +627,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2961362945448497977, guid: 18bf60df72e687b4e997d55628733c8c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -15.537842
+      value: -15.5390625
       objectReference: {fileID: 0}
     - target: {fileID: 2961362945448497977, guid: 18bf60df72e687b4e997d55628733c8c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -8.737305
+      value: -8.738281
       objectReference: {fileID: 0}
     - target: {fileID: 2961362945448497977, guid: 18bf60df72e687b4e997d55628733c8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -652,6 +652,10 @@ PrefabInstance:
     - target: {fileID: 2961362945448497978, guid: 18bf60df72e687b4e997d55628733c8c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2961362945855105284, guid: 18bf60df72e687b4e997d55628733c8c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.1015625
       objectReference: {fileID: 0}
     - target: {fileID: 2961362945855105307, guid: 18bf60df72e687b4e997d55628733c8c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1295,7 +1299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -36.197075, y: 0}
+  m_AnchoredPosition: {x: -36.19525, y: 0}
   m_SizeDelta: {x: -72.3932, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &866085703
@@ -1486,7 +1490,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 43b92591c64c38543ac524fe3e41214f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b06ef320df19c9f4a9bc31f04a079351, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1555,9 +1559,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1000, y: 400}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

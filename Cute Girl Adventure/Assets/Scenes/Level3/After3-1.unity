@@ -634,6 +634,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 195406521}
   m_CullTransparentMesh: 1
+--- !u!1 &202771654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 202771655}
+  m_Layer: 0
+  m_Name: Dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &202771655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202771654}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 209980586}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &209980585
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,6 +701,7 @@ Transform:
   - {fileID: 566315755}
   - {fileID: 850163976}
   - {fileID: 389626765}
+  - {fileID: 202771655}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7940,9 +7972,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   challengePanel: {fileID: 871373438}
   challengePanel2: {fileID: 2072797101}
-  challengePanel3: {fileID: 0}
+  challengePanel3: {fileID: 202771654}
   questionDisplay: {fileID: 660878040}
-  finalQuestionDisplay: {fileID: 660878040}
+  finalQuestionDisplay: {fileID: 1801239865}
   answerScroll: {fileID: 0}
   congratulationPanel: {fileID: 0}
   wrongAnswerPanel: {fileID: 0}

@@ -972,6 +972,7 @@ Transform:
   - {fileID: 566315755}
   - {fileID: 850163976}
   - {fileID: 389626765}
+  - {fileID: 908990646}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2414,6 +2415,37 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 7551891604398672813, guid: 379eff478e027c043bd32d1f59d58f0d, type: 3}
   m_PrefabInstance: {fileID: 898438188}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &908990645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908990646}
+  m_Layer: 0
+  m_Name: Dummy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &908990646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908990645}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 209980586}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &915756011
 GameObject:
   m_ObjectHideFlags: 0
@@ -8222,7 +8254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   challengePanel: {fileID: 871373438}
   challengePanel2: {fileID: 2072797101}
-  challengePanel3: {fileID: 0}
+  challengePanel3: {fileID: 908990645}
   questionDisplay: {fileID: 660878040}
   finalQuestionDisplay: {fileID: 660878040}
   answerScroll: {fileID: 1832204911}
