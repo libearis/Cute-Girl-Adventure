@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 public class LevelManager : MonoBehaviour 
 {
+    
+
     public static LevelManager instance;
 
     public Transform respawnPoint;
@@ -13,7 +16,6 @@ public class LevelManager : MonoBehaviour
     public GameObject playerPrefab;
     public GameObject questionDisplay;
     public GameObject answerScrollPanel;
-    public GameObject congratulationPanel;
 
     public int answerValue;
 
@@ -27,7 +29,7 @@ public class LevelManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        girlTrigger= GameObject.FindWithTag("Player").GetComponent<Trigger>();
+        girlTrigger = GameObject.FindWithTag("Player").GetComponent<Trigger>();
         girlMovement = GameObject.FindWithTag("Player").GetComponent<GirlMovement>();
     }
     
@@ -44,7 +46,6 @@ public class LevelManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.G))
         {
             StartCoroutine(openingChest());
-            Answering();
         }
 
         if (girlTrigger == null)
@@ -80,13 +81,6 @@ public class LevelManager : MonoBehaviour
             questionDisplay.SetActive(false);
         }
     } 
-    void Answering()
-    {
-        if(girlTrigger.questionSee && answerValue ==30)
-        {
-            congratulationPanel.SetActive(true);
-        }
-    }
     IEnumerator openingChest()
     {
         if (girlTrigger.chestInteraction)
@@ -122,4 +116,5 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene("LevelSelection1");
     }
+    
 }

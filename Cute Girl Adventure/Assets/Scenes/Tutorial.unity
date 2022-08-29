@@ -4444,6 +4444,7 @@ GameObject:
   - component: {fileID: 1682729429}
   - component: {fileID: 1682729430}
   - component: {fileID: 1682729431}
+  - component: {fileID: 1682729432}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -4502,6 +4503,21 @@ MonoBehaviour:
   cam: {fileID: 460662463}
   playerPrefab: {fileID: 7151840005660015798, guid: 0658826ca023f3c4190a984247903a29, type: 3}
   respawnPoint: {fileID: 776053302}
+--- !u!114 &1682729432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682729428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4a7b7f3fb5fc1429b4fa8a910a0cb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionList: []
+  optionList: []
+  answerValue: {fileID: 0}
 --- !u!1 &1685595239
 GameObject:
   m_ObjectHideFlags: 0

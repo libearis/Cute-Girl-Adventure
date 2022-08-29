@@ -6,7 +6,67 @@ using TMPro;
 using UnityEngine.Networking;
 public class API : MonoBehaviour
 {
-    /*IEnumerator GetRequest(string uri)
+    DataSoal dataSoal;
+    Trigger girlTrigger;
+
+    public GameObject congratulationPanel;
+    public List<string> questionList, optionList, correctOption, currentQuestion, currentOption, currentCorrectOption;
+    public List<int> levelNumber;
+    [SerializeField] TextMeshProUGUI[] questionText, trueAnswer, wrongAnswer;
+
+    public int currentLevel;
+
+    int index, i, randomWrong;
+
+    public string answerValidate;
+
+    private void Awake()
+    {
+        girlTrigger = GameObject.FindWithTag("Player").GetComponent<Trigger>(); 
+        StartCoroutine(GetRequest("https://dev.edigy.id/api/v1/gamification/quizzes"));
+    }
+
+    private void Start()
+    {
+        /*for(index = 0; index < levelNumber.Count; index++)
+        {
+            if(levelNumber[index] == currentLevel)
+            {
+                print("dapat");
+                currentQuestion.Add(questionList[index]);
+                for(int i = index * 5; i < index * 5 + 5; i++)
+                {
+                    currentOption.Add(optionList[i]);
+                    currentCorrectOption.Add(correctOption[i]);
+                }
+            }
+        }
+        for(i = 0; i < currentQuestion.Count; i ++)
+        {
+            questionText[i].text = currentQuestion[i];
+            for(index = i * 5; index < i * 5 + 5; index++)
+            {
+                if(currentCorrectOption[index] == "1")
+                {
+                    trueAnswer[i].text = currentOption[index];
+                    currentOption.RemoveAt(index);
+                }
+            }
+            index -= 5;
+            randomWrong = Random.Range(index, currentOption.Count);
+            Debug.Log(currentOption[randomWrong]);
+            wrongAnswer[0].text = currentOption[randomWrong];
+        }*/
+    }
+
+    private void FixedUpdate()
+    {
+        if (girlTrigger.questionSee && answerValidate == "30"&& Input.GetKeyDown(KeyCode.G))
+        {
+            congratulationPanel.SetActive(true);
+        }
+    }
+    IEnumerator GetRequest(string uri)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
@@ -26,21 +86,53 @@ public class API : MonoBehaviour
                     Debug.LogError(pages[page] + ": HTTP Error: " + webRequest.error);
                     break;
                 case UnityWebRequest.Result.Success:
-                    detailSoal = JsonUtility.FromJson<detailSoal>(webRequest.downloadHandler.text);
-                    foreach (detailData data in detailSoal.result.data)
+                    dataSoal = JsonUtility.FromJson<DataSoal>(webRequest.downloadHandler.text);
+                    foreach (DetailSoal data in dataSoal.result)
                     {
+                        levelNumber.Add(data.level_number);
                         questionList.Add(data.question);
-                        questionId.Add(data.quiz_id.ToString());
-                        foreach (Option option in data.options)
+                        foreach (DetailOpsi opsi in data.options)
                         {
-                            optionList.Add(option.description);
-                            optionId.Add(option.quiz_id.ToString());
-                            correct_answer.Add(option.correct_answer);
-                            j++;
+                            optionList.Add(opsi.description);
+                            correctOption.Add(opsi.correct_answer);
+                        }    
+                    }
+                    for (index = 0; index < levelNumber.Count; index++)
+                    {
+                        if (levelNumber[index] == currentLevel)
+                        {
+                            print("dapat");
+                            currentQuestion.Add(questionList[index]);
+                            for (int i = index * 5; i < index * 5 + 5; i++)
+                            {
+                                currentOption.Add(optionList[i]);
+                                currentCorrectOption.Add(correctOption[i]);
+                            }
                         }
+                    }
+                    for (i = 0; i < currentQuestion.Count; i++)
+                    {
+                        questionText[i].text = currentQuestion[i];
+                        for (index = i * 5; index < i * 5 + 5; index++)
+                        {
+                            if (currentCorrectOption[index] == "1")
+                            {
+                                trueAnswer[i].text = currentOption[index];
+                                currentOption.RemoveAt(index);
+                            }
+                        }
+                        index -= 5;
+                        randomWrong = Random.Range(index, currentOption.Count);
+                        Debug.Log(currentOption[randomWrong]);
+                        wrongAnswer[0].text = currentOption[randomWrong];
                     }
                     break;
             }
         }
-    }*/
+    }
+
+    public void AnswerValidation(int counting)
+    {
+        answerValidate = trueAnswer[counting].text;
+    }
 }
