@@ -4484,7 +4484,6 @@ MonoBehaviour:
   playerPrefab: {fileID: 7151840005660015798, guid: 0658826ca023f3c4190a984247903a29, type: 3}
   questionDisplay: {fileID: 1801239865}
   answerScrollPanel: {fileID: 0}
-  congratulationPanel: {fileID: 0}
   answerValue: 0
   chestOpeningAnimation: {fileID: 0}
   cam: {fileID: 460662463}
@@ -4515,9 +4514,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f4a7b7f3fb5fc1429b4fa8a910a0cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  congratulationPanel: {fileID: 0}
   questionList: []
   optionList: []
-  answerValue: {fileID: 0}
+  correctOption: []
+  currentQuestion: []
+  currentOption: []
+  currentCorrectOption: []
+  levelNumber: 
+  questionText: []
+  trueAnswer: []
+  wrongAnswer: []
+  currentLevel: 0
+  answerValidate: 
 --- !u!1 &1685595239
 GameObject:
   m_ObjectHideFlags: 0

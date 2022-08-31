@@ -7,6 +7,7 @@ using UnityEngine.Networking;
 public class ChallengeManagerLevel4 : MonoBehaviour
 {
     DataSoal dataSoal;
+    Robot robot;
 
     [SerializeField] string[] questionList, answerList, correctAnswerList;
     [SerializeField] TextMeshProUGUI questionText;
@@ -18,7 +19,7 @@ public class ChallengeManagerLevel4 : MonoBehaviour
     public int index, randomNumber;
     private void Start()
     {
-        
+        robot = GameObject.FindWithTag("Player").GetComponent<Robot>();
         randomNumber = Random.Range(0, 4);
         questionText.text = questionList[randomNumber];
         currentCorrectAnswer = correctAnswerList[randomNumber];
@@ -38,6 +39,7 @@ public class ChallengeManagerLevel4 : MonoBehaviour
         if(answerList[randomNumber+arrayOfOption] == currentCorrectAnswer)
         {
             print("benar");
+            robot.ammoCount++;
         }
     }
 

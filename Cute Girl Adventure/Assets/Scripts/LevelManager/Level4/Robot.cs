@@ -9,14 +9,14 @@ public class Robot : MonoBehaviour
     [SerializeField] Transform firePosition;
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] Animator animator;
-    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] GameObject bulletPrefab, challengePanel;
     [SerializeField] float jumpForce = 8f, fireTimer, fireRate;
 
     private float moveSpeed = 3f;
     public float moveX;
     private bool isJumping = false, flipped;
 
-    public int maxJump = 1;
+    public int maxJump = 1, ammoCount;
     private int jumpCount;
 
     void Update()
@@ -74,10 +74,11 @@ public class Robot : MonoBehaviour
         if (Input.GetButton("Fire1"))
         {
             animator.SetBool("isShooting", true);
-            if (fireRate < 0)
+            if (fireRate < 0 && ammoCount > 0)
             {
                 Instantiate(bulletPrefab, firePosition.position, firePosition.rotation);
                 fireRate = fireTimer;
+                ammoCount--;
             }
             else
             {
@@ -102,6 +103,22 @@ public class Robot : MonoBehaviour
         {
             jumpCount = maxJump;
             animator.SetBool("isJumping", false);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Challenge")
+        {
+            challengePanel.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Challenge")
+        {
+            challengePanel.SetActive(false  );
         }
     }
 }
