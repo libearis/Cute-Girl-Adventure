@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,7 +28,7 @@ public class API : MonoBehaviour
 
     private void Start()
     {
-        /*for(index = 0; index < levelNumber.Count; index++)
+        *//*for(index = 0; index < levelNumber.Count; index++)
         {
             if(levelNumber[index] == currentLevel)
             {
@@ -56,7 +56,7 @@ public class API : MonoBehaviour
             randomWrong = Random.Range(index, currentOption.Count);
             Debug.Log(currentOption[randomWrong]);
             wrongAnswer[0].text = currentOption[randomWrong];
-        }*/
+        }*//*
     }
 
     private void FixedUpdate()
@@ -136,3 +136,4 @@ public class API : MonoBehaviour
         answerValidate = trueAnswer[counting].text;
     }
 }
+*/

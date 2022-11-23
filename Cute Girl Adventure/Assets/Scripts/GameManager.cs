@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        progressionValue = PlayerPrefs.GetInt("Progression");
+        progressionValue = 5;
     }
     public void SavingProgression(int currentScreenValue)
     {
@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
             progressionValue = currentScreenValue;
             PlayerPrefs.SetInt("Progression", progressionValue);
         }
+        else PlayerPrefs.SetInt("Progression", progressionValue);
     }
     public void CheckingProgression()
     {
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour
 
     private void OnApplicationQuit()
     {
+        DeletingPref();
         SavingProgression(progressionValue);
     }
 }

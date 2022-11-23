@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d433a188f9f70f74cbb23f6ab39eb233
+guid: 046d4ff919908d149b0202d134a34302
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -143,10 +143,10 @@ TextureImporter:
       name: Asset 3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3
-        width: 116
-        height: 189
+        x: 123
+        y: 66
+        width: 57
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 134d956cfa2d9ea4a81b9c112280b9d1
-      internalID: 246375682
+      spriteID: 4cfb12b94ee9d40478904caac4e630e8
+      internalID: -1390517849
       vertices: []
       indices: 
       edges: []
@@ -164,10 +164,10 @@ TextureImporter:
       name: Asset 3_1
       rect:
         serializedVersion: 2
-        x: 164
-        y: 6
-        width: 116
-        height: 189
+        x: 220
+        y: 53
+        width: 79
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ede88858de0afdd438d8515668552e4b
-      internalID: 871096634
+      spriteID: b0fd316b76b56604c95aa6e4e95e0df5
+      internalID: -1751359398
       vertices: []
       indices: 
       edges: []
@@ -185,52 +185,10 @@ TextureImporter:
       name: Asset 3_2
       rect:
         serializedVersion: 2
-        x: 314
-        y: 7
-        width: 116
-        height: 189
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e864fd88a54e78468ba94af298c3e74
-      internalID: 1821960336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset 3_3
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 6
-        width: 135
-        height: 189
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9770fd7c86da7c41abb29642e86e43d
-      internalID: 722386162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asset 3_4
-      rect:
-        serializedVersion: 2
-        x: 607
+        x: 0
         y: 0
-        width: 144
-        height: 189
+        width: 336
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,8 +196,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f62853f8830c3a4b8827e72940b8916
-      internalID: 515771057
+      spriteID: 4429afa9eefd635418d0ffad34fc8025
+      internalID: -825027340
       vertices: []
       indices: 
       edges: []
@@ -255,11 +213,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Asset 3_2: 1821960336
-      Asset 3_4: 515771057
-      Asset 3_0: 246375682
-      Asset 3_1: 871096634
-      Asset 3_3: 722386162
+      Asset 3_2: -825027340
+      Asset 3_0: -1390517849
+      Asset 3_1: -1751359398
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -23,7 +23,7 @@ public class girlStep : MonoBehaviour
     public bool isGameOver = false;
 
     public GameObject[] healthIcon;
-    public GameObject panel, homeButton;
+    public GameObject gameOverPanel, homeButton;
     public GameObject winPanel; 
 
     public Animator anim;
@@ -32,27 +32,27 @@ public class girlStep : MonoBehaviour
     private void Awake()
     {
         starText = GameObject.Find("StarText").GetComponent<TextMeshProUGUI>();
-        retrychances = PlayerPrefs.GetInt("Health");
+        retrychances = PlayerPrefs.GetInt("Health", 2);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+        //transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
-        if(Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < maxHeight)
+        if (Input.GetKey(KeyCode.UpArrow) && transform.position.y < 4 && !isDone)
         {
-            targetPos = new Vector2(transform.position.x, transform.position.y + sidePower);
+            transform.position += new Vector3(0, 0.05f, 0);
         }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > minHeight)
+        if (Input.GetKey(KeyCode.DownArrow) && transform.position.y > -4 && !isDone)
         {
-            targetPos = new Vector2(transform.position.x, transform.position.y - sidePower);
+            transform.position += new Vector3(0, -0.05f, 0);
         }
 
         if(currentHealth == 0)
         {
-            panel.SetActive(true);
+            gameOverPanel.SetActive(true);
+
             if(retrychances == 0)
             {
                 isGameOver = true;
@@ -67,6 +67,7 @@ public class girlStep : MonoBehaviour
                 anim.enabled = false;
                 retryText.text = "Retry Chance = " + retrychances.ToString();
             }
+            this.gameObject.GetComponent<girlStep>().enabled = false;
         }
 
         if(starCount == maxStar)

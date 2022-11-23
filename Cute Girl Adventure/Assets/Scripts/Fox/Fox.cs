@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Fox : MonoBehaviour
 {
+    public static Fox instance;
+    SpriteRenderer cowboy;
+
+
     public GameObject bubbleChat;
     public GameObject foxDialogPanel;
     [SerializeField] DialogueSystem dialogueSystem;
@@ -12,6 +16,7 @@ public class Fox : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
         girlMovement = GameObject.FindWithTag("Player").GetComponent<GirlMovement>();
     }
 
@@ -47,14 +52,15 @@ public class Fox : MonoBehaviour
     {
         canTalkToFox = false;
         foxDialogPanel.SetActive(true);
-        StartCoroutine(dialogueSystem.TypingDialogue());
+        StartCoroutine(dialogueSystem.TypingDialogue(1f));
         girlMovement.enabled = false;
     }
     public void OnClickClose()
     {
         canTalkToFox = true;
         girlMovement.enabled = true;
-        dialogueSystem.textDisplay.text = null;
+        dialogueSystem.textDisplay.text = "";
         dialogueSystem.clickAnywhere.SetActive(false);
+        foxDialogPanel.SetActive(false);
     }
 }

@@ -6,13 +6,12 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 public class LevelManager : MonoBehaviour 
 {
-    
 
     public static LevelManager instance;
 
     public Transform respawnPoint;
 
-    public GameObject challengePanel;
+    public GameObject challengePanel, congratulationPanel;
     public GameObject playerPrefab;
     public GameObject questionDisplay;
     public GameObject answerScrollPanel;
@@ -26,8 +25,11 @@ public class LevelManager : MonoBehaviour
 
     public CinemachineVirtualCameraBase cam;
 
+    [SerializeField] private string soundName;
     private void Awake()
     {
+        AudioManager.instance.stopAllSound();
+        AudioManager.instance.play(soundName);
         instance = this;
         girlTrigger = GameObject.FindWithTag("Player").GetComponent<Trigger>();
         girlMovement = GameObject.FindWithTag("Player").GetComponent<GirlMovement>();
@@ -46,6 +48,7 @@ public class LevelManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.G))
         {
             StartCoroutine(openingChest());
+            AnsweringDoorQuestion();
         }
 
         if (girlTrigger == null)
@@ -80,7 +83,16 @@ public class LevelManager : MonoBehaviour
         {
             questionDisplay.SetActive(false);
         }
-    } 
+    }
+
+    void AnsweringDoorQuestion()
+    {
+        if (girlTrigger.questionSee && answerValue == 30)
+        {
+            congratulationPanel.SetActive(true);
+            girlMovement.enabled = false;
+        }
+    }
     IEnumerator openingChest()
     {
         if (girlTrigger.chestInteraction)
@@ -116,5 +128,4 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene("LevelSelection1");
     }
-    
 }

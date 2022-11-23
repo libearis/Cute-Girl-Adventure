@@ -803,7 +803,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.779661, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1335,7 +1335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 231008017509242112, guid: 9a1bc5e888914994ba9359fa429e7667, type: 3}
       propertyPath: m_text
-      value: Count 'n shoot
+      value: Puzzle game
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1bc5e888914994ba9359fa429e7667, type: 3}
@@ -1904,9 +1904,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickAnywhere: {fileID: 195406521}
+  dialoguePanel: {fileID: 0}
   textDisplay: {fileID: 1506969590}
   sentences:
   - Selesaikan Challenge tersebut untuk mendapatkan kemampuan Double Jump
+  scene: []
+  typingSpeed: 0
+  changingScene: 0
 --- !u!1 &1229558198
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,6 +3594,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.42
       objectReference: {fileID: 0}
+    - target: {fileID: 6128881803204504022, guid: e7f8fd90c7c1dfc45b85814838338a60, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6128881804043800057, guid: e7f8fd90c7c1dfc45b85814838338a60, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.55999947
@@ -3852,6 +3860,7 @@ MonoBehaviour:
   answerValue: 0
   maximumJump: 1
   wrongAnswerChallenge: 
+  doorScene: 
   girlTrigger: {fileID: 0}
   girlMovement: {fileID: 0}
   chestOpeningAnimation: {fileID: 0}
@@ -4699,7 +4708,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 20, y: 11, z: 0}
+  - first: {x: 18, y: 12, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 4
@@ -4709,7 +4718,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 11, y: 14, z: 0}
+  - first: {x: 10, y: 14, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 4
@@ -4749,7 +4758,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 16, y: 16, z: 0}
+  - first: {x: 14, y: 16, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 4

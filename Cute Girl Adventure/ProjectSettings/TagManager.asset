@@ -17,6 +17,12 @@ TagManager:
   - Question
   - Challenge2
   - Challenge3
+  - Rope
+  - ClimbRope
+  - Key
+  - LockedDoor
+  - Door
+  - Audio
   layers:
   - Default
   - TransparentFX

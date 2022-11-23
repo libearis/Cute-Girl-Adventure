@@ -5,6 +5,8 @@ using Cinemachine;
 
 public class Trigger : MonoBehaviour
 {
+    public static Trigger instance;
+
     private bool canTalkToFox;
     public bool challengeAccepted = false;
     public bool challengeAccepted2 = false;
@@ -15,7 +17,13 @@ public class Trigger : MonoBehaviour
     public bool chestInteraction = false;
     public bool finalAnswer = false;
     public bool enteringCloudy;
+    public bool enteringDoor, enteringLockedDoor;
+    public bool climbingRope;
 
+    private void Start()
+    {
+        instance = this;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Death")
@@ -57,8 +65,24 @@ public class Trigger : MonoBehaviour
         {
             enteringCloudy = true;
         }
-    }
 
+        if (collision.tag == "ClimbRope")
+        {
+            climbingRope = true;
+        }
+        if (collision.tag == "Door")
+        {
+            enteringDoor = true;
+        }
+        if (collision.tag == "LockedDoor")
+        {
+            enteringLockedDoor = true;
+        }
+        if (collision.tag == "Key")
+        {
+            StartCoroutine(TriggerFunction.instance.GettingKey());
+        }
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Challenge")
@@ -94,6 +118,18 @@ public class Trigger : MonoBehaviour
         if (collision.tag == "Finale")
         {
             finalAnswer = false;
+        }
+        if (collision.tag == "Door")
+        {
+            enteringDoor = false;
+        }
+        if (collision.tag == "LockedDoor")
+        {
+            enteringLockedDoor = false;
+        }
+        if (collision.tag == "ClimbRope")
+        {
+            climbingRope = false;
         }
     }
 }

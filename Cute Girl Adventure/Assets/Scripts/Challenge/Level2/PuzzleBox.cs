@@ -21,6 +21,4 @@ public class PuzzleBox : MonoBehaviour
             button.transform.SetParent(boxField, false);
         }
     }
-
-    
 }

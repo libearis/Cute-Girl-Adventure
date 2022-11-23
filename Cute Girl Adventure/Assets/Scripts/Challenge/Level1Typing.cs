@@ -36,7 +36,7 @@ public class Level1Typing : MonoBehaviour
 
     private void Start()
     {
-        retryChances = PlayerPrefs.GetInt("Health");
+        retryChances = PlayerPrefs.GetInt("Health", 2);
         maxRand = currentWord.Count;
     }
     public void StartingTheGame()
@@ -83,7 +83,7 @@ public class Level1Typing : MonoBehaviour
     {
         if(Input.anyKeyDown)
         {
-            string keyPressed = Input.inputString;
+            string keyPressed = Input.inputString.ToLower();
 
             if(keyPressed.Length == 1)
             {

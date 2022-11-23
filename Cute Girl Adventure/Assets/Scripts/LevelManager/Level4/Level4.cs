@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Level4 : MonoBehaviour
 {
+    public static Level4 instance;
+
     public GameObject challengePanel, challengePanel2, challengePanel3;
     public GameObject questionDisplay;
     public GameObject finalQuestionDisplay;
@@ -13,9 +15,9 @@ public class Level4 : MonoBehaviour
     public GameObject wrongAnswerPanel, haveNoAnswer;
     public GameObject removeCrate;
 
-    public int answerValue;
-    public int maximumJump;
-    public string wrongAnswerChallenge;
+    public int answerValue, maximumJump;
+
+    public string wrongAnswerChallenge, doorScene;
 
     public Trigger girlTrigger;
     public GirlMovement girlMovement;
@@ -24,6 +26,7 @@ public class Level4 : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
         girlTrigger = GameObject.FindWithTag("Player").GetComponent<Trigger>();
         girlMovement = GameObject.FindWithTag("Player").GetComponent<GirlMovement>();
         girlMovement.maxJump = maximumJump;
@@ -31,15 +34,8 @@ public class Level4 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        QuestionDisplaying();
-        FinalQuestionDisplaying();
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            StartCoroutine(openingChest());
-            AnsweringDoorQuestion();
-            AnsweringFinalQuestion();
-        }
-
+        DoorCheck();
+        ChallengeCheck();
         if (girlTrigger == null)
         {
             girlTrigger = GameObject.FindWithTag("Player").GetComponent<Trigger>();
@@ -49,7 +45,6 @@ public class Level4 : MonoBehaviour
             girlMovement = GameObject.FindWithTag("Player").GetComponent<GirlMovement>();
         }
         girlMovement.maxJump = maximumJump;
-        ChallengeCheck();
     }
 
     void ChallengeCheck()
@@ -80,6 +75,15 @@ public class Level4 : MonoBehaviour
             return;
         }
     }
+
+    void DoorCheck()
+    {
+        if(girlTrigger.enteringDoor)
+        {
+            GameManager.instance.ChangingScene(doorScene);
+        }
+    }
+
     void QuestionDisplaying()
     {
         if (girlTrigger.questionSee)

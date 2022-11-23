@@ -10,11 +10,12 @@ public class FindDifference : MonoBehaviour
     public Animator[] missedGuess;
     public GameObject victoryPanel, warningText, gameOverPanel, homeButton;
     public Animator sceneTransition;
-    public TextMeshProUGUI timeCount, retryChanceText;
+    public TextMeshProUGUI timeCount, retryChanceText, differenceRemainingText;
 
     private int correctGuess, index;
     public string loadToScene;
     public bool[] isGuessed;
+    public bool hardMode;
     private bool isStarting;
 
     public float timeRound = 30;
@@ -27,6 +28,7 @@ public class FindDifference : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        differenceRemainingText.text = (numberGuess - correctGuess).ToString();
         if (timeDecreaseEffect != 0 && isStarting)
         {
             GameStart();
@@ -74,8 +76,8 @@ public class FindDifference : MonoBehaviour
             missedGuess[index].enabled = true;
             GameOver();
         }
-        else
-        { 
+        else if(hardMode)
+        {
             missedGuess[index].enabled = true;
             index++;
         }

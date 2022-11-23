@@ -289,9 +289,9 @@ MonoBehaviour:
   funnyWord: {fileID: 867600714}
   firstGuess: 1
   secondGuess: 1
-  timeRound: 60
-  timeDecreaseEffect: 60
-  retryChance: 0
+  timeRound: 30
+  timeDecreaseEffect: 30
+  retryChance: 2
   loadToScene: AfterChallenge2-1
 --- !u!1 &595287236
 GameObject:
@@ -1240,6 +1240,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -1247,6 +1251,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 310331671}
+    - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1644908409}
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -1260,6 +1268,10 @@ PrefabInstance:
       value: Starting
       objectReference: {fileID: 0}
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: Starting
       objectReference: {fileID: 0}
@@ -1270,6 +1282,10 @@ PrefabInstance:
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: PuzzleBox, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1989,6 +2005,11 @@ PrefabInstance:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7234756843147789624, guid: 925606afc65e6c8428e09f862a113501, type: 3}
   m_PrefabInstance: {fileID: 1603723367}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1644908409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4192174938182741932, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
+  m_PrefabInstance: {fileID: 878626316}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1740629730 stripped
 RectTransform:
