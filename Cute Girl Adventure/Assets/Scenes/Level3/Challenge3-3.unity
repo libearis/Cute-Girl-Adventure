@@ -1897,8 +1897,8 @@ MonoBehaviour:
   timeCount: {fileID: 131019132}
   retryChancesText: {fileID: 1722927643}
   wordLeft: {fileID: 881075175}
-  timeDecreaseEffect: 1
-  timeRound: 1
+  timeDecreaseEffect: 120
+  timeRound: 120
   backGround: {fileID: 438709872}
   victoryPanel: {fileID: 1329565126}
   restartButton: {fileID: 747968304}

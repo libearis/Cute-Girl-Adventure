@@ -391,11 +391,19 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1379956063}
+    - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 310331671}
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
@@ -408,6 +416,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: Starting
       objectReference: {fileID: 0}
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
@@ -416,6 +428,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: Level2Matching, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4192174939108878283, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
@@ -537,6 +553,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1070396856}
     m_Modifications:
+    - target: {fileID: 695941105, guid: 18bf60df72e687b4e997d55628733c8c, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2019079928977528491, guid: 18bf60df72e687b4e997d55628733c8c, type: 3}
       propertyPath: m_Name
       value: Retry Chance Text
@@ -1967,6 +1987,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1379956063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4192174938182741932, guid: 3c163b618ee60214dadf30fc09e44612, type: 3}
+  m_PrefabInstance: {fileID: 127436510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1477683219
 GameObject:
   m_ObjectHideFlags: 0

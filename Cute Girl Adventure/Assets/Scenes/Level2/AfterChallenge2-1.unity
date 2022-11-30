@@ -1166,7 +1166,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.779661, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1579,7 +1579,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1685595243}
+    m_TransformParent: {fileID: 2088777114}
     m_Modifications:
     - target: {fileID: 3129460420538464053, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
       propertyPath: m_Name
@@ -1595,7 +1595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3129460420538464054, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3129460420538464054, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1639,15 +1639,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3129460420538464054, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3129460420538464054, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3129460420538464054, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3129460420538464054, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1668,6 +1668,70 @@ PrefabInstance:
     - target: {fileID: 3129460420538464054, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129460421739064691, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129460421739064691, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1714104430}
+    - target: {fileID: 3129460421739064691, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1714104430}
+    - target: {fileID: 3129460421739064691, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129460421739064691, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: RestartLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129460421929640188, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129460421929640188, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1714104430}
+    - target: {fileID: 3129460421929640188, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1714104430}
+    - target: {fileID: 3129460421929640188, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1714104430}
+    - target: {fileID: 3129460421929640188, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129460421929640188, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SavingProgression
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129460421929640188, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: CheckingProgression
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129460421929746081, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1714104430}
+    - target: {fileID: 3129460421929746081, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: PausingTheGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129460422526477806, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1714104430}
+    - target: {fileID: 3129460422526477806, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ResumeGame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a948d2e01e33674e9de37df0d41b778, type: 3}
@@ -2164,7 +2228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5202525455246191444, guid: 4a4f45d0ab12c1c47857fd1bd3f14dc5, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5202525455246191444, guid: 4a4f45d0ab12c1c47857fd1bd3f14dc5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2626,9 +2690,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickAnywhere: {fileID: 195406521}
+  dialoguePanel: {fileID: 0}
   textDisplay: {fileID: 1506969590}
   sentences:
   - Bagus, sekarang tekan space saat diudara untuk melompat kedua kalinya
+  backupSentences: []
+  scene: []
+  index: 0
+  typingSpeed: 0
+  changingScene: 0
 --- !u!1 &1229558198
 GameObject:
   m_ObjectHideFlags: 0
@@ -11717,7 +11787,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636900639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.001593, y: 0.99123996, z: -9.999998}
+  m_LocalPosition: {x: 8.001574, y: 0.99122995, z: -9.999998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11929,7 +11999,6 @@ RectTransform:
   m_Children:
   - {fileID: 2088777114}
   - {fileID: 2131780367}
-  - {fileID: 616229934}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14074,6 +14143,7 @@ RectTransform:
   - {fileID: 602310959}
   - {fileID: 1232813610}
   - {fileID: 650119714}
+  - {fileID: 616229934}
   - {fileID: 966228249}
   m_Father: {fileID: 1685595243}
   m_RootOrder: 0

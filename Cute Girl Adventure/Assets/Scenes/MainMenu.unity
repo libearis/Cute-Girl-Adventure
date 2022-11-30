@@ -903,7 +903,7 @@ PrefabInstance:
       objectReference: {fileID: 1219016381}
     - target: {fileID: 4395059177882309562, guid: 89a7e20f958a33743963cce128296128, type: 3}
       propertyPath: progressionValue
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4395059177882309563, guid: 89a7e20f958a33743963cce128296128, type: 3}
       propertyPath: m_RootOrder

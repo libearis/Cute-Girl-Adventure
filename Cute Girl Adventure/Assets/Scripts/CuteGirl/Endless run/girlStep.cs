@@ -48,8 +48,16 @@ public class girlStep : MonoBehaviour
         {
             transform.position += new Vector3(0, -0.05f, 0);
         }
+        if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x > -8 && !isDone)
+        {
+            transform.position += new Vector3(-0.05f, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.RightArrow) && transform.position.x  < 8 && !isDone)
+        {
+            transform.position += new Vector3(0.05f, 0, 0);
+        }
 
-        if(currentHealth == 0)
+        if (currentHealth == 0)
         {
             gameOverPanel.SetActive(true);
 

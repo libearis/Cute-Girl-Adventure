@@ -57,7 +57,7 @@ public class GirlMovement : MonoBehaviour
 
     private void Jumping()
     {
-        if (jumpCount > 0 && Input.GetKeyDown(KeyCode.Space) && rb.velocity.y > -0.01f)
+        if (jumpCount > 0 && Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) && rb.velocity.y > -0.01f)
         {
             rb.velocity = Vector2.up * jumpForce;
             animator.SetBool("isJumping", true);

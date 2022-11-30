@@ -9,8 +9,7 @@ public class Level6 : MonoBehaviour
 
     public GameObject challengePanel, warningKeyText;
 
-    public string doorScene;
-    public bool startCantWalk, canEnterLocked, startWithDialogue;
+    public string[] doorScene;
 
     public int dialogueTimer;
 
@@ -19,14 +18,6 @@ public class Level6 : MonoBehaviour
     void Start()
     {
         instance = this;
-        if (startCantWalk)
-        {
-            StartCoroutine(CantWalk());
-        }
-        if (startWithDialogue)
-        {
-            StartCoroutine(DialogueSystem.instance.TypingDialogue(dialogueTimer));
-        }
     }
 
     private void FixedUpdate()
@@ -43,18 +34,14 @@ public class Level6 : MonoBehaviour
     {
         if (girlTrigger.enteringDoor)
         {
-            GameManager.instance.ChangingScene(doorScene);
+            GameManager.instance.ChangingScene(doorScene[0]);
             girlMovement.enabled = false;
         }
-        else if (girlTrigger.enteringLockedDoor && Input.GetKeyDown(KeyCode.G) && canEnterLocked)
+        else if (girlTrigger.enteringLockedDoor)
         {
-            GameManager.instance.ChangingScene(doorScene);
+            GameManager.instance.ChangingScene(doorScene[1]);
             girlMovement.enabled = false;
-        }
-        else if (girlTrigger.enteringLockedDoor && Input.GetKeyDown(KeyCode.G) && !canEnterLocked)
-        {
-            StartCoroutine(WarningText());
-        }
+        }   
     }
 
     private IEnumerator CantWalk()
