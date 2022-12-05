@@ -23,6 +23,7 @@ TagManager:
   - LockedDoor
   - Door
   - Audio
+  - Math
   layers:
   - Default
   - TransparentFX
