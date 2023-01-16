@@ -171,9 +171,51 @@ EditorBuildSettings:
     path: Assets/Scenes/Level6/Level6.unity
     guid: 82cf49b4d83ccf844a447af7ad08adb8
   - enabled: 1
+    path: Assets/Scenes/Level6/After6-1.unity
+    guid: 758a89ba5b75261448adc354a9f08fdd
+  - enabled: 1
+    path: Assets/Scenes/Level6/After6-2.unity
+    guid: e1f0a069486b1dc43b23d1ce5173b020
+  - enabled: 1
+    path: Assets/Scenes/Level6/After6-3.unity
+    guid: cfde637eeeb696e4e877bef9d3c4de56
+  - enabled: 1
     path: Assets/Scenes/Level6/Challenge6-1.unity
     guid: f0c3800a99d1a9b4aa935156a26502b0
   - enabled: 1
+    path: Assets/Scenes/Level6/Challenge6-2.unity
+    guid: a9d1452b299961943b051bfe80e77930
+  - enabled: 1
     path: Assets/Scenes/Level6/Challenge6-3.unity
     guid: 70adc9e1b723d414b92a8c823c4792a0
+  - enabled: 1
+    path: Assets/Scenes/Level6/Area 6-2.unity
+    guid: e1f7d3a2c29a18d45be88643269b37f7
+  - enabled: 1
+    path: Assets/Scenes/Level6/Area 6-3.unity
+    guid: d6d42850383128941971a5a5ea970584
+  - enabled: 1
+    path: Assets/Scenes/Level6/Area 6-4.unity
+    guid: 1ac924a62bd24054d8da7021cffc7184
+  - enabled: 1
+    path: Assets/Scenes/Level6/Area 6-5.unity
+    guid: 58843d36d636c334bbb9231399589f53
+  - enabled: 1
+    path: Assets/Scenes/Level6/Area 6-6.unity
+    guid: 7a858b9acbfa5914483712d712ece0c5
+  - enabled: 1
+    path: Assets/Scenes/Level6/Area 6-7.unity
+    guid: 7436191a189e0a445b203cac015555b9
+  - enabled: 1
+    path: Assets/Scenes/Level6/Area 6-8.unity
+    guid: b38ec39157c49014b8262f06555b178c
+  - enabled: 1
+    path: Assets/Scenes/Level6/Area 6-9.unity
+    guid: 2130872002ceab84994fa6824badc7d2
+  - enabled: 1
+    path: Assets/Scenes/LevelSelection/LevelSelection7.unity
+    guid: cbdd9b91b22a2ea42aeb0123e46765e5
+  - enabled: 1
+    path: Assets/Scenes/Level7/Level7.unity
+    guid: 0463082ce58e7d44ca08dc39254633c1
   m_configObjects: {}

@@ -2416,11 +2416,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   challengePanel: {fileID: 0}
+  wheelPanel: {fileID: 0}
   warningKeyText: {fileID: 0}
   doorScene:
   - After6-2
   - After6-3
   dialogueTimer: 0
+  girlMovement: {fileID: 0}
+  girlTrigger: {fileID: 0}
 --- !u!1 &368910668
 GameObject:
   m_ObjectHideFlags: 0

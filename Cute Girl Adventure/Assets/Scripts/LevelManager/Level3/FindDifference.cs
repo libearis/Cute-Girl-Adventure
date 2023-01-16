@@ -53,6 +53,7 @@ public class FindDifference : MonoBehaviour
             correctGuess++;
             if (correctGuess == numberGuess)
             {
+                isStarting = false;
                 StartCoroutine(BackToWorld());
             }
         }

@@ -1418,7 +1418,7 @@ MonoBehaviour:
   - register
   - revoke
   - denial
-  loadToScene: House4-3
+  loadToScene: After6-3
   maxRand: 35
 --- !u!4 &970267989
 Transform:

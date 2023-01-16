@@ -7,27 +7,39 @@ public class Level6 : MonoBehaviour
 {
     public static Level6 instance;
 
-    public GameObject challengePanel, warningKeyText;
+    [SerializeField] GameObject challengePanel, wheelPanel, warningKeyText;
 
     public string[] doorScene;
 
     public int dialogueTimer;
 
-    GirlMovement girlMovement;
-    Trigger girlTrigger;
+    public GirlMovement girlMovement;
+    public Trigger girlTrigger;
     void Start()
     {
         instance = this;
+        girlMovement = GameObject.Find("Player").GetComponent<GirlMovement>();
+        girlTrigger = GameObject.Find("Player").GetComponent<Trigger>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        ChangingDoorScene();
         if (girlTrigger.challengeAccepted)
         {
+            print("Hi");
             challengePanel.SetActive(true);
         }
-        else challengePanel.SetActive(false);
+        else if (girlTrigger.questionSee)
+        {
+            this.gameObject.GetComponent<PieDetector>().enabled = true;
+            wheelPanel.SetActive(true);
+        }
+        else 
+        {
+            challengePanel.SetActive(false);
+            wheelPanel.SetActive(false);
+        }
+        ChangingDoorScene();
     }
 
     public void ChangingDoorScene()
@@ -57,5 +69,9 @@ public class Level6 : MonoBehaviour
 
         yield return new WaitForSeconds(1.5f);
         warningKeyText.SetActive(false);
+    }
+    public void CannotWalk()
+    {
+        girlMovement.enabled = false;
     }
 }

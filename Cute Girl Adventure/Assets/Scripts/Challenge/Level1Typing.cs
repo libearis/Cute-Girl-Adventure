@@ -50,7 +50,6 @@ public class Level1Typing : MonoBehaviour
         retryChances = 2;
         PlayerPrefs.SetInt("Health", retryChances);
     }
-    // Update is called once per frame
     void Update()
     {
         if (timeDecreaseEffect != 0 && gameIsFinished == false && gameStarted)

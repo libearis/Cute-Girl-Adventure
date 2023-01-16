@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        progressionValue = 5;
+        progressionValue = 6;
     }
     public void SavingProgression(int currentScreenValue)
     {

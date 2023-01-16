@@ -299,7 +299,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def71208504f624418148ebaaf88d279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: -90
+  rotationSpeed: 90
+  isSlowingDown: 0
+  isStopped: 0
+  infiniteRotation: 0
 --- !u!212 &16204842
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -446,7 +449,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def71208504f624418148ebaaf88d279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: -90
+  rotationSpeed: 90
+  isSlowingDown: 0
+  isStopped: 0
+  infiniteRotation: 0
 --- !u!212 &51029662
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3084,7 +3090,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def71208504f624418148ebaaf88d279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: -90
+  rotationSpeed: 90
+  isSlowingDown: 0
+  isStopped: 0
+  infiniteRotation: 0
 --- !u!58 &721446182
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3339,7 +3348,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def71208504f624418148ebaaf88d279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: -90
+  rotationSpeed: 90
+  isSlowingDown: 0
+  isStopped: 0
+  infiniteRotation: 0
 --- !u!212 &847839604
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4256,6 +4268,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: -90
+  isSlowingDown: 0
+  isStopped: 0
+  infiniteRotation: 0
 --- !u!1 &1092524114
 GameObject:
   m_ObjectHideFlags: 0

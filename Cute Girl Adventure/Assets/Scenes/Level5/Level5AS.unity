@@ -418,6 +418,7 @@ GameObject:
   - component: {fileID: 104274974}
   - component: {fileID: 104274973}
   - component: {fileID: 104274972}
+  - component: {fileID: 104274975}
   m_Layer: 0
   m_Name: Saw Blade 1
   m_TagString: Death
@@ -433,7 +434,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104274970}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 48.6, y: 13.63, z: 0.53434676}
+  m_LocalPosition: {x: 48.6, y: 13.63, z: 0.5343468}
   m_LocalScale: {x: 0.16241683, y: 0.16241683, z: 0.16241683}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -468,7 +469,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def71208504f624418148ebaaf88d279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: -90
+  rotationSpeed: 90
+  isSlowingDown: 0
+  isStopped: 0
 --- !u!212 &104274974
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -521,6 +524,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &104274975
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104274970}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e954bdca1231064fa62ce7c4da3282d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &110442033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4206,6 +4229,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: -90
+  isSlowingDown: 0
+  isStopped: 0
 --- !u!95 &761794619
 Animator:
   serializedVersion: 4
@@ -8351,7 +8376,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def71208504f624418148ebaaf88d279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: -90
+  rotationSpeed: 90
+  isSlowingDown: 0
+  isStopped: 0
 --- !u!212 &1025796646
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9811,7 +9838,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def71208504f624418148ebaaf88d279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: -90
+  rotationSpeed: 90
+  isSlowingDown: 0
+  isStopped: 0
 --- !u!212 &1449684406
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10062,6 +10091,13 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
+    Iso: 200
+    ShutterSpeed: 0.005
+    Aperture: 16
+    BladeCount: 5
+    Curvature: {x: 2, y: 11}
+    BarrelClipping: 0.25
+    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -13729,7 +13765,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def71208504f624418148ebaaf88d279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: -90
+  rotationSpeed: 90
+  isSlowingDown: 0
+  isStopped: 0
 --- !u!212 &1949936156
 SpriteRenderer:
   m_ObjectHideFlags: 0
