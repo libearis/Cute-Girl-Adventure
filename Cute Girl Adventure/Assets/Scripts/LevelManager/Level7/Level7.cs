@@ -7,10 +7,10 @@ public class Level7 : MonoBehaviour
 {
     public static Level7 instance;
 
-    [SerializeField] GameObject challengePanel, wheelPanel, warningKeyText;
-    [SerializeField] GameObject[] colorMark;
+    [SerializeField] GameObject challengePanel, warningKeyText;
+    [SerializeField] GameObject[] colorMark, wheelPanel;
 
-    public bool goldShow, blueShow, whiteShow; 
+    public bool goldShow, blueShow, whiteShow;  
 
     public GirlMovement girlMovement;
     public Trigger girlTrigger;
@@ -25,18 +25,25 @@ public class Level7 : MonoBehaviour
     {
         if (girlTrigger.challengeAccepted)
         {
-            print("Hi");
             challengePanel.SetActive(true);
         }
         else if (girlTrigger.questionSee)
         {
             this.gameObject.GetComponent<PieDetector>().enabled = true;
-            wheelPanel.SetActive(true);
+            wheelPanel[0].SetActive(true);
+        }
+        else if (girlTrigger.finalQuestionSee)
+        {
+            this.gameObject.GetComponent<PieDetector>().enabled = true;
+            wheelPanel[2].SetActive(true);
         }
         else
         {
             challengePanel.SetActive(false);
-            wheelPanel.SetActive(false);
+            foreach (GameObject wheelOption in wheelPanel)
+            {
+                wheelOption.SetActive(false);
+            }
         }
 
         if(goldShow)
@@ -70,8 +77,5 @@ public class Level7 : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         warningKeyText.SetActive(false);
     }
-    public void CannotWalk()
-    {
-        girlMovement.enabled = false;
-    }
+    public void CannotWalk() => girlMovement.enabled = false;
 }
