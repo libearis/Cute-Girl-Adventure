@@ -85,7 +85,6 @@ public class Trigger : MonoBehaviour
                 StartCoroutine(TriggerFunction.instance.GettingKey());
             }
         } // Collision Tag
-        
         {
             if(collision.gameObject.name == "Standing White")
             {
@@ -151,5 +150,19 @@ public class Trigger : MonoBehaviour
                 climbingRope = false;
             }
         } // Collision Tag
+        {
+            if (collision.gameObject.name == "Standing White")
+            {
+                questionSee = false;
+            }
+            if (collision.gameObject.name == "Standing Blue")
+            {
+                finalQuestionSee = false;
+            }
+            if (collision.gameObject.name == "Standing Gold")
+            {
+                enteringCloudy = false;
+            }
+        } // Collision GameObject Name
     }
 }

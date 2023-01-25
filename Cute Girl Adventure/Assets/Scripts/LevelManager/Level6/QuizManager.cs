@@ -6,13 +6,14 @@ using TMPro;
 
 public class QuizManager : MonoBehaviour
 {
-    [SerializeField] List<string> originalQuestion, originalAnswer, question, answerOption, correctAnswer, currentAnswerOption;
+    [SerializeField] List<string> question, answerOption, correctAnswer, currentAnswerOption;
     [SerializeField] TextMeshProUGUI[] questionText, optionText;
     [SerializeField] GameObject correctImage, wrongImage, quizPanel, statueCutscene;
     [SerializeField] Slider sliderUI;
     [SerializeField] Collider2D rouletteColider;
     [SerializeField] int scoreToWin;
     [SerializeField] Button spinButton;
+
     int randomQuestionIndex, randomAnswerIndex, score;
     bool quizStarted;
     private void Start()
@@ -82,7 +83,7 @@ public class QuizManager : MonoBehaviour
         if (score == scoreToWin)
         {
             rouletteColider.enabled = false;
-            statueCutscene.SetActive(true);
+            statueCutscene.GetComponent<StatueMovement>().enabled = true;
             GameObject.Find("Player").GetComponent<GirlMovement>().enabled = true;
             quizPanel.SetActive(false);
         }

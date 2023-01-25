@@ -188,8 +188,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -334,8 +334,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - Berapa jarak tendangan penalti
   - Berapa perolehan poin setiap free throw yang berhasil dalam basket
@@ -1152,8 +1150,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1615,8 +1613,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3757,41 +3755,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
-  - Berapa jumlah penduduk indonesia di tahun 2022
-  - Kota dengan populasi terbanyak di dunia
-  - Bangunan tertinggi di dunia adalah
-  - Negara yang memiliki warna terbanyak di benderanya adalah
-  - Lukisan termahal di dunia adalah
+  - Siapa nama lengkap boneka barbie
+  - Orang dengan usia plaing tua yaitu 122 tahun bernama
+  - SIapa pemegang rekor terbanyak di dunia
+  - Kota dengah suhu paling dingin di dunia
+  - Negara dengan pulau terbanyak adalah
   answerOption:
-  - 100 juta
-  - 175 juta
-  - 200 juta
-  - 275 juta
-  - Delhi, India
-  - New York, US
-  - Tokyo, Japan
-  - Jakarta, Indonesia
-  - Burj Khalifa
-  - Liberty Statue
-  - Warisan Merdeka Tower
-  - Shanghai Tower
-  - Afrika Selatan
-  - Jordan
-  - Beliza
-  - United States
-  - Salvator Mundi
-  - Interchange
-  - Nafea Faa Ipoipo
-  - Number 17A
+  - Barbie Kumalasari
+  - Barbara Palvin
+  - Barbara Millicent Roberts
+  - Brilly Adventia
+  - Kane Tanaka
+  - Jeanne Louise
+  - 'Maria Branyas Morera '
+  - Tekla Juniewicz
+  - Joe Carlucci
+  - Cherry Yoshitake
+  - Alastair Galpin
+  - Ashrita Furman
+  - Yakutsk
+  - Barrow
+  - Astana
+  - Kolkata
+  - Indonesia
+  - Amerika
+  - Swedia
+  - Australia
   correctAnswer:
-  - 275 juta
-  - Tokyo, Japan
-  - Burj Khalifa
-  - Beliza
-  - Salvator Mundi
+  - Barbara Millicent Roberts
+  - Jeanne Louise
+  - Ashrita Furman
+  - Yakutsk
+  - Swedia
   currentAnswerOption: []
   questionText:
   - {fileID: 1653287456}
@@ -4459,7 +4455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 911fddcb7ac90c740998f1c3bf9120fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 407ec44f7c4eac142b51996ff8991ace, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9292,7 +9288,7 @@ GameObject:
   - component: {fileID: 251309085}
   - component: {fileID: 251309084}
   m_Layer: 5
-  m_Name: Health
+  m_Name: Geography
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9315,8 +9311,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -225.68}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114, y: -71}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -98.3, y: -66.6}
+  m_SizeDelta: {x: 217.9019, y: 54.4755}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &251309084
 MonoBehaviour:
@@ -9338,7 +9334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Health
+  m_text: geography
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a998fdf6a986464b8443652653250d7, type: 2}
   m_sharedMaterial: {fileID: 7619777983894066055, guid: 1a998fdf6a986464b8443652653250d7, type: 2}
@@ -9365,8 +9361,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11037,41 +11033,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
-  - Selain di Sumatra, dimana tempat bisa melihat orang utan
-  - Hewan manakah yang mempunyai 9 Otak dan 3 Hati
-  - Hewan paling jarang di indo adalah
-  - Yang merupakah hewan mamalia adalah
-  - Berikut yang bukan hewan amfibi
+  - Hewan berikut yang tidak bisa lompat
+  - Berikut fakta yang benar terkait kekelawar, yaitu
+  - Berapa otot yang kucing punya di masing-masing telinga mereka
+  - Warna kulit dari beruang kutub
+  - Berapa lama koala tidur dalam satu hari
   answerOption:
-  - Bangkok
-  - Borneo
-  - 'Jakarta '
-  - Kuala Lumpur
-  - Gurita
-  - Cumi-Cumi
-  - Ubur-Ubur
-  - Lumba-Lumba
-  - Kucing
   - Jerapah
   - Gajah
-  - Burung
-  - Platypus
-  - Hiu
-  - katak
-  - Ayam
-  - Katak
-  - Salamander
-  - Buaya
-  - Sesilia
+  - Kura-kura
+  - Beruang
+  - Satu-satunya mamalia yang bisa terbang
+  - Penghisap darah
+  - Hewan yang buta
+  - Sayapnya disebut pentagium
+  - 16
+  - 32
+  - 64
+  - 128
+  - 'Putih '
+  - Coklat
+  - Kuning
+  - Hitam
+  - 8 Jam
+  - 12 Jam
+  - 18 Jam
+  - 22 Jam
   correctAnswer:
-  - Borneo
-  - Ragdoll
-  - Jerapah
-  - Platypus
-  - Buaya
+  - Gajah
+  - Satu-satunya mamalia yang bisa terbang
+  - 32
+  - Hitam
+  - 22 Jam
   currentAnswerOption: []
   questionText:
   - {fileID: 1547710955}
@@ -11273,7 +11267,7 @@ GameObject:
   - component: {fileID: 338320940}
   - component: {fileID: 338320939}
   m_Layer: 5
-  m_Name: Math
+  m_Name: UUD
   m_TagString: Math
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11296,7 +11290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 33.172}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -46, y: 106}
+  m_AnchoredPosition: {x: -33.2, y: 107.9}
   m_SizeDelta: {x: 215.3875, y: 53.8469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &338320939
@@ -11319,7 +11313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Math
+  m_text: uud
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a998fdf6a986464b8443652653250d7, type: 2}
   m_sharedMaterial: {fileID: 7619777983894066055, guid: 1a998fdf6a986464b8443652653250d7, type: 2}
@@ -11346,8 +11340,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11777,6 +11771,7 @@ GameObject:
   - component: {fileID: 360213876}
   - component: {fileID: 360213878}
   - component: {fileID: 360213879}
+  - component: {fileID: 360213880}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -11829,12 +11824,34 @@ MonoBehaviour:
   challengePanel: {fileID: 1128034215}
   warningKeyText: {fileID: 0}
   colorMark: []
-  wheelPanel: []
+  wheelPanel:
+  - {fileID: 2000100229}
+  - {fileID: 1462302954}
+  - {fileID: 398703212}
   goldShow: 0
   blueShow: 0
   whiteShow: 0
   girlMovement: {fileID: 0}
   girlTrigger: {fileID: 0}
+--- !u!114 &360213880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360213874}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e6389a541e516479b031099526903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pie: {fileID: 0}
+  mathPanel: {fileID: 0}
+  historyPanel: {fileID: 0}
+  nationalPanel: {fileID: 0}
+  sportPanel: {fileID: 0}
+  slider: {fileID: 0}
+  angles: {x: 0, y: 0, z: 0}
 --- !u!1 &368045886
 GameObject:
   m_ObjectHideFlags: 0
@@ -12431,6 +12448,7 @@ GameObject:
   - component: {fileID: 398703213}
   - component: {fileID: 398703215}
   - component: {fileID: 398703214}
+  - component: {fileID: 398703216}
   m_Layer: 5
   m_Name: Quiz Wheel Gold
   m_TagString: Untagged
@@ -12499,6 +12517,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398703212}
   m_CullTransparentMesh: 1
+--- !u!114 &398703216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398703212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e6389a541e516479b031099526903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pie: {fileID: 0}
+  mathPanel: {fileID: 0}
+  historyPanel: {fileID: 0}
+  nationalPanel: {fileID: 0}
+  sportPanel: {fileID: 0}
+  slider: {fileID: 0}
+  angles: {x: 0, y: 0, z: 0}
 --- !u!1001 &402508587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13753,8 +13790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - Berikut tanda dan gejala penyakt Diabetes, kecuali
   - Jumalh waktu tidur yang cukup
@@ -13900,7 +13935,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -65576984, guid: 7046086b626904f44958d27d3cf1662a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b9b2b2aafb1850c40b4b5d4162303657, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15158,7 +15193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: def71208504f624418148ebaaf88d279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 1200
+  rotationSpeed: 2000
   isSlowingDown: 0
   isStopped: 0
 --- !u!114 &602709664
@@ -17851,6 +17886,8 @@ MonoBehaviour:
   shackingRate: 0.05
   duration: 0
   vertical: 0
+  max: 0
+  min: 0
 --- !u!1 &766451611
 GameObject:
   m_ObjectHideFlags: 0
@@ -20263,7 +20300,7 @@ GameObject:
   - component: {fileID: 859406995}
   - component: {fileID: 859406996}
   m_Layer: 5
-  m_Name: Math (Hard)
+  m_Name: UUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20325,43 +20362,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
-  - "Diketahui 5 + 7+ 9+ \u2026 + k= 192. Tentukan nilai k yang memenuhi!"
-  - 'Hasil dari: 3 + 3 x 5 - 2 '
-  - Titik potong garis 3x+2y=12 dan x+2y=8 terletak pada titik
-  - "Fungsi  f ( x ) = x<sup> 3</sup> + 3 x<sup> 2 </sup>\u2212 9 x \u2212 7  turun
-    pada interval"
-  - Diketahui suku ke-2 dan ke-5 barisan geometri berturut-turut 1 dan 8. Suku ke-11
-    barisan tersebut adalah
+  - Setiap penduduk berhak memeluk agamanya masing-masing dan beribadat sesuai agamanya
+    merupakan pasal...
+  - pasal 24A Ayat 4 membicarakan tentang...
+  - Pasal 28 membahas topik tentang...
+  - seseorang dikatakan penduduk di indonesia jika...
+  - Perihal keuangan terdapat di pasal
   answerOption:
-  - -27
-  - -29
-  - 27
-  - 29
-  - 28
-  - 24
-  - 20
-  - 16
-  - -2, 3
-  - 2, -3
-  - 2, 3
-  - -2, -3
-  - "\u2212 3 < x < 1 "
-  - "x < \u2212 3   atau   x > 1 "
-  - '1 < x < 3 '
-  - "x < \u2212 1   atau   x > 3"
-  - 420
-  - 510
-  - 512
-  - 520
+  - 29 Ayat 1
+  - 29 Ayat 2
+  - 30 Ayat 1
+  - 30 Ayat 2
+  - Pemilihan ketua MA dan wakilnya
+  - Ketentuan pembayaran pajak
+  - KY dapat diberhentikan oleh presiden
+  - Negara berdasar ketuhanan YME
+  - Agama
+  - 'Struktur Pemerintahan '
+  - Keuangan
+  - HAM
+  - Merupakan WNI saja
+  - WNI dan WNA di indonesia
+  - WNA di indonesia
+  - Warga yang telah memiliki KTP
+  - Pasal 20
+  - Pasal 21
+  - Pasal 23
+  - Pasal 28
   correctAnswer:
-  - 27
-  - 16
-  - 2, 3
+  - 29 Ayat 2
+  - Pemilihan ketua MA dan wakilnya
+  - WNI dan WNA di indonesia
   - "\u2212 3 < x < 1 "
-  - 512
+  - Pasal 23
   currentAnswerOption: []
   questionText:
   - {fileID: 1931661088}
@@ -21692,8 +21726,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - Selain di Sumatra, dimana tempat bisa melihat orang utan
   - Hewan manakah yang mempunyai 9 Otak dan 3 Hati
@@ -23040,7 +23072,7 @@ GameObject:
   - component: {fileID: 1013634562}
   - component: {fileID: 1013634563}
   m_Layer: 5
-  m_Name: Health
+  m_Name: Geography
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23102,35 +23134,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
-  - Berikut tanda dan gejala penyakt Diabetes, kecuali
-  - Jumalh waktu tidur yang cukup
-  - Takaran normal jumlah air yang dibutuhkan manusia dalam 1 hari
-  - Batas yang dianjurkan untuk makan mie instan dalam seminggu
-  - Makanan yang mengandung protein paling rendah
+  - Ibu kota dari negara india adalah
+  - Gunung tertinggi di dunia
+  - Sungai terpanjang di dunia
+  - Ibu kota meksiko adalah
+  - Laut terbesar adalah
   answerOption:
-  - Sering Lapar
-  - Sering Haus
-  - Mudah Lelah
-  - Nyeri Kaki
-  - 9-11
-  - 7-9
-  - 8-10
-  - 5-7
-  - 1 liter
-  - 2 liter
-  - 3 liter
-  - 4 liter
-  - 1-2 kali
-  - 3-4 kali
-  - 4-6 kali
-  - Setiap hari
-  - Telur
-  - Salmon
-  - Kedelai
-  - Susu
+  - Mumbai
+  - Agra
+  - New Delhi
+  - Kolkata
+  - Everest
+  - Lhotse
+  - K2
+  - Cho Oyu
+  - Amazon River
+  - Yangtze River
+  - Yellow River
+  - Nile River
+  - San luis potosi
+  - Mexico City
+  - Durango
+  - Campeche
+  - Samudra atlantik
+  - Samudra Hindia
+  - Laut Karang
+  - Samudra Pasifik
   correctAnswer:
   - Nyeri Kaki
   - 7-9
@@ -26521,8 +26551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - Berapa jarak tendangan penalti
   - Berapa perolehan poin setiap free throw yang berhasil dalam basket
@@ -27482,8 +27510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - "Diketahui 5 + 7+ 9+ \u2026 + k= 192. Tentukan nilai k yang memenuhi!"
   - 'Hasil dari: 3 + 3 x 5 - 2 '
@@ -28369,8 +28395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - Berikut tanda dan gejala penyakt Diabetes, kecuali
   - Jumalh waktu tidur yang cukup
@@ -28768,8 +28792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - Berapa jumlah penduduk indonesia di tahun 2022
   - Kota dengan populasi terbanyak di dunia
@@ -28933,8 +28955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - Berapa jarak tendangan penalti
   - Berapa perolehan poin setiap free throw yang berhasil dalam basket
@@ -29100,8 +29120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - Selain di Sumatra, dimana tempat bisa melihat orang utan
   - Hewan manakah yang mempunyai 9 Otak dan 3 Hati
@@ -29572,8 +29590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - Berapa jumlah penduduk indonesia di tahun 2022
   - Kota dengan populasi terbanyak di dunia
@@ -30197,6 +30213,7 @@ GameObject:
   - component: {fileID: 1462302955}
   - component: {fileID: 1462302957}
   - component: {fileID: 1462302956}
+  - component: {fileID: 1462302958}
   m_Layer: 5
   m_Name: Quiz Wheel Blue
   m_TagString: Untagged
@@ -30265,6 +30282,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462302954}
   m_CullTransparentMesh: 1
+--- !u!114 &1462302958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462302954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e6389a541e516479b031099526903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pie: {fileID: 956529631}
+  mathPanel: {fileID: 0}
+  historyPanel: {fileID: 0}
+  nationalPanel: {fileID: 0}
+  sportPanel: {fileID: 0}
+  slider: {fileID: 0}
+  angles: {x: 0, y: 0, z: 0}
 --- !u!1 &1464905466
 GameObject:
   m_ObjectHideFlags: 0
@@ -31857,8 +31893,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -34997,8 +35033,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - "Diketahui 5 + 7+ 9+ \u2026 + k= 192. Tentukan nilai k yang memenuhi!"
   - 'Hasil dari: 3 + 3 x 5 - 2 '
@@ -38259,7 +38293,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Titik potong garis 3x+2y=12 dan x+2y=8 terletak pada titik
+  m_text: Setiap penduduk berhak memeluk agamanya masing-masing dan beribadat sesuai
+    agamanya merupakan pasal...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a998fdf6a986464b8443652653250d7, type: 2}
   m_sharedMaterial: {fileID: 7619777983894066055, guid: 1a998fdf6a986464b8443652653250d7, type: 2}
@@ -42047,6 +42082,7 @@ GameObject:
   - component: {fileID: 2000100230}
   - component: {fileID: 2000100232}
   - component: {fileID: 2000100231}
+  - component: {fileID: 2000100233}
   m_Layer: 5
   m_Name: Quiz Wheel White
   m_TagString: Untagged
@@ -42115,6 +42151,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000100229}
   m_CullTransparentMesh: 1
+--- !u!114 &2000100233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000100229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e6389a541e516479b031099526903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pie: {fileID: 602709662}
+  mathPanel: {fileID: 1013634560}
+  historyPanel: {fileID: 331776155}
+  nationalPanel: {fileID: 179342731}
+  sportPanel: {fileID: 859406993}
+  slider: {fileID: 0}
+  angles: {x: 0, y: 0, z: 0}
 --- !u!1 &2004447096
 GameObject:
   m_ObjectHideFlags: 0

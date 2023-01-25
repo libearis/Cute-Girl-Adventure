@@ -1164,7 +1164,7 @@ MonoBehaviour:
   correctImage: {fileID: 158573948}
   wrongImage: {fileID: 53876561}
   quizPanel: {fileID: 1210722013}
-  statueCutscene: {fileID: 1954321136}
+  statueCutscene: {fileID: 583390138}
   sliderUI: {fileID: 1017564473}
   rouletteColider: {fileID: 1424006294}
   scoreToWin: 5
@@ -5803,7 +5803,7 @@ MonoBehaviour:
   correctImage: {fileID: 158573948}
   wrongImage: {fileID: 53876561}
   quizPanel: {fileID: 1210722013}
-  statueCutscene: {fileID: 1954321136}
+  statueCutscene: {fileID: 583390138}
   sliderUI: {fileID: 1017564473}
   rouletteColider: {fileID: 1424006294}
   scoreToWin: 5
@@ -6372,7 +6372,7 @@ GameObject:
   - component: {fileID: 583390142}
   - component: {fileID: 583390141}
   - component: {fileID: 583390140}
-  - component: {fileID: 583390139}
+  - component: {fileID: 583390143}
   m_Layer: 0
   m_Name: Statue Head
   m_TagString: Untagged
@@ -6380,26 +6380,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &583390139
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583390138}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &583390140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6493,6 +6473,21 @@ Transform:
   m_Father: {fileID: 43261424}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &583390143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583390138}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed4186a3c7fb2249901bf1eef6474b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shackingRate: 0.05
+  duration: 0
+  vertical: 0
 --- !u!1 &597707735 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 231008016866827700, guid: 9a1bc5e888914994ba9359fa429e7667, type: 3}
@@ -12329,7 +12324,7 @@ MonoBehaviour:
   correctImage: {fileID: 158573948}
   wrongImage: {fileID: 53876561}
   quizPanel: {fileID: 1210722013}
-  statueCutscene: {fileID: 1954321136}
+  statueCutscene: {fileID: 583390138}
   sliderUI: {fileID: 1017564473}
   rouletteColider: {fileID: 1424006294}
   scoreToWin: 5
@@ -14461,7 +14456,7 @@ MonoBehaviour:
   correctImage: {fileID: 158573948}
   wrongImage: {fileID: 53876561}
   quizPanel: {fileID: 1210722013}
-  statueCutscene: {fileID: 1954321136}
+  statueCutscene: {fileID: 583390138}
   sliderUI: {fileID: 1017564473}
   rouletteColider: {fileID: 1424006294}
   scoreToWin: 0
@@ -16348,7 +16343,7 @@ PlayableDirector:
   - key: {fileID: 224740448398801114, guid: d8cd9d8bded452242a818a9d2f6415f4, type: 2}
     value: {fileID: 43261425}
   - key: {fileID: -3603516570838904736, guid: 7eed5d9d29f9a014c8fda7840738e0f4, type: 2}
-    value: {fileID: 583390139}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1965530892
@@ -18189,7 +18184,7 @@ MonoBehaviour:
   correctImage: {fileID: 158573948}
   wrongImage: {fileID: 53876561}
   quizPanel: {fileID: 1210722013}
-  statueCutscene: {fileID: 1954321136}
+  statueCutscene: {fileID: 583390138}
   sliderUI: {fileID: 1017564473}
   rouletteColider: {fileID: 1424006294}
   scoreToWin: 5

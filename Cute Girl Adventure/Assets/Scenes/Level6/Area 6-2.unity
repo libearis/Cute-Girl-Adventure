@@ -5616,7 +5616,7 @@ MonoBehaviour:
   correctImage: {fileID: 1719929417}
   wrongImage: {fileID: 725541204}
   quizPanel: {fileID: 1720904870}
-  statueCutscene: {fileID: 0}
+  statueCutscene: {fileID: 1161514883}
   sliderUI: {fileID: 1719837322}
   rouletteColider: {fileID: 710747071}
   scoreToWin: 3
@@ -9767,6 +9767,7 @@ GameObject:
   - component: {fileID: 1161514884}
   - component: {fileID: 1161514885}
   - component: {fileID: 1161514886}
+  - component: {fileID: 1161514887}
   m_Layer: 0
   m_Name: Statue Head
   m_TagString: Untagged
@@ -9782,7 +9783,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161514883}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.458881, y: 10.703128, z: 0.53434676}
+  m_LocalPosition: {x: -29.48, y: 10.703128, z: 0.53434676}
   m_LocalScale: {x: 1.4321, y: 1.4321, z: 1.4321}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9867,6 +9868,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8984337, y: 5.04}
   m_EdgeRadius: 0
+--- !u!114 &1161514887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161514883}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed4186a3c7fb2249901bf1eef6474b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shackingRate: 0.05
+  duration: 0
+  vertical: 0
+  max: -28
+  min: -29
 --- !u!1 &1176315327
 GameObject:
   m_ObjectHideFlags: 0
@@ -11472,7 +11490,7 @@ MonoBehaviour:
   correctImage: {fileID: 1719929417}
   wrongImage: {fileID: 725541204}
   quizPanel: {fileID: 1720904870}
-  statueCutscene: {fileID: 0}
+  statueCutscene: {fileID: 1161514883}
   sliderUI: {fileID: 1719837322}
   rouletteColider: {fileID: 710747071}
   scoreToWin: 3
@@ -13778,7 +13796,7 @@ MonoBehaviour:
   correctImage: {fileID: 1719929417}
   wrongImage: {fileID: 725541204}
   quizPanel: {fileID: 1720904870}
-  statueCutscene: {fileID: 0}
+  statueCutscene: {fileID: 1161514883}
   sliderUI: {fileID: 1719837322}
   rouletteColider: {fileID: 710747071}
   scoreToWin: 3
@@ -15271,7 +15289,7 @@ MonoBehaviour:
   correctImage: {fileID: 1719929417}
   wrongImage: {fileID: 725541204}
   quizPanel: {fileID: 1720904870}
-  statueCutscene: {fileID: 0}
+  statueCutscene: {fileID: 1161514883}
   sliderUI: {fileID: 1719837322}
   rouletteColider: {fileID: 710747071}
   scoreToWin: 3

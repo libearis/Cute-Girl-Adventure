@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class StatueMovement : MonoBehaviour
 {
-    public float shackingRate, duration, vertical;
-    void Start()
-    {
+    public float shackingRate, duration, vertical, max, min;
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (transform.position.x >= -0.4f)
+        if (transform.position.x >= max)
         {
             shackingRate = -shackingRate;
         }
-        else if (transform.position.x <= -0.8f)
+        else if (transform.position.x <= min)
         {
             shackingRate = (Mathf.Abs(shackingRate));
         }
@@ -31,7 +26,6 @@ public class StatueMovement : MonoBehaviour
             if(duration >=3.5f)
             {
                 vertical = 0;
-
             }
         }
     }

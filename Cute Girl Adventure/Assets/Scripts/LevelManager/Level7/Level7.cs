@@ -29,12 +29,17 @@ public class Level7 : MonoBehaviour
         }
         else if (girlTrigger.questionSee)
         {
-            this.gameObject.GetComponent<PieDetector>().enabled = true;
+            wheelPanel[0].gameObject.GetComponent<PieDetector>().enabled = true;
             wheelPanel[0].SetActive(true);
         }
         else if (girlTrigger.finalQuestionSee)
         {
-            this.gameObject.GetComponent<PieDetector>().enabled = true;
+            wheelPanel[1].gameObject.GetComponent<PieDetector>().enabled = true;
+            wheelPanel[1].SetActive(true);
+        }
+        else if (girlTrigger.enteringCloudy)
+        {
+            wheelPanel[2].gameObject.GetComponent<PieDetector>().enabled = true;
             wheelPanel[2].SetActive(true);
         }
         else

@@ -12,7 +12,7 @@ public class PieDetector : MonoBehaviour
     private void Start()
     {
         instance = this;
-        rotation = GameObject.Find("Pie").GetComponent<Rotation>();
+        rotation = pie.gameObject.GetComponent<Rotation>();
     }
     private void Update()
     {
