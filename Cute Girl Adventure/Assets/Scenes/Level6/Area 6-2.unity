@@ -3476,18 +3476,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1867107794}
-        m_TargetAssemblyTypeName: Rotation, Assembly-CSharp
-        m_MethodName: PressingAgain
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1867107794}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -5541,35 +5529,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion:
-  - Berapa jarak tendangan penalti
-  - Berapa perolehan poin setiap free throw yang berhasil dalam basket
-  - Dalam catur, penangkapan bidak khusus yang hanya dapat terjadi segera setelah
-    bidak bergerak dua kotak dari kotak awalnya disebut
-  - Dalam permainan bulutangkis, pukulan yang bertujuan menerbangkan kok setinggi
-    mungkin ke pinggir lapangan disebut
-  - Petinju indonesia yang pernah meraih juara dunia
-  originalAnswer:
-  - 10
-  - 11
-  - 12
-  - 13
-  - 1
-  - 2
-  - 3
-  - 1-3
-  - Checkmate
-  - Castling
-  - Promotion
-  - En passant
-  - Smash
-  - Lob
-  - Serve
-  - Drop shot
-  - Joe Louis
-  - Mike Tyson
-  - Chris John
-  - Muhammad Ali
   question:
   - Berapa jarak tendangan penalti
   - Berapa perolehan poin setiap free throw yang berhasil dalam basket
@@ -8523,8 +8482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion: []
-  originalAnswer: []
   question:
   - "Diketahui 5 + 7+ 9+ \u2026 + k= 192. Tentukan nilai k yang memenuhi!"
   - 'Hasil dari: 3 + 3 x 5 - 2 '
@@ -11417,34 +11374,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion:
-  - Hasil dari 5 <sup>3</sup>
-  - 'Hasil dari: 3 + 3 x 5 - 2 '
-  - 'Bangun ruang yang memiliki 3 sudut '
-  - 'Hasil dari 1 + 2 + 3....... + 9 = '
-  - Diketahui suku ke-2 dan ke-5 barisan geometri berturut-turut 1 dan 8. Suku ke-11
-    barisan tersebut adalah
-  originalAnswer:
-  - 25
-  - 125
-  - 625
-  - 15
-  - 28
-  - 24
-  - 20
-  - 16
-  - Jajargenjang
-  - Trapesium
-  - Segitiga
-  - Persegi panjang
-  - 45
-  - 54
-  - 36
-  - 55
-  - 420
-  - 510
-  - 512
-  - 520
   question:
   - Hasil dari 5 <sup>3</sup>
   - 'Hasil dari: 3 + 3 x 5 - 2 '
@@ -13725,33 +13654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion:
-  - Bukti awal masuknya Islam di Jawa adalah ditemukannya makam
-  - Penyebaran Islam di Indonesia salah satunya melalui jalur
-  - Peristiwa pencurian Ir. Soekarno
-  - Tokoh pahlawan yang memperjuangkan emansipasi wanita
-  - Pada tahun berapa Indonesia merdeka
-  originalAnswer:
-  - Trowulan
-  - Sunan Ampel
-  - Fatimah bin Maimun
-  - Maulana Malik
-  - Perdagangan
-  - Pertanian
-  - Peperangan
-  - Pertambangan
-  - Proklamasi Kemerdekaan
-  - Bandung Lautan Api
-  - Rengasdengklok
-  - Pertempuran Ambarawa
-  - Fatmawati
-  - Megawati
-  - Dewi Sartika
-  - R.A Kartini
-  - 1942
-  - 1945
-  - 1948
-  - 1955
   question:
   - Bukti awal masuknya Islam di Jawa adalah ditemukannya makam
   - Penyebaran Islam di Indonesia salah satunya melalui jalur
@@ -14578,7 +14480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1720904871
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15218,33 +15120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f43060c263c3d247a8484392c7e0efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalQuestion:
-  - Apakah lambang dari sila ke 3
-  - Tokoh pahlawan di uang lembar 2 ribu
-  - Presiden ke 5 Republik Indonesia
-  - Makna dari bendera merah putih
-  - Ibu kota Republik Indonesia
-  originalAnswer:
-  - Padi dan Kapas
-  - Pohon Beringin
-  - Bintang
-  - Rantai
-  - Mohammad Hoesni Thamrin
-  - Ki Hadjar Dewantara
-  - Kapitan Pattimura
-  - Djuanda Kartawidjaja
-  - Megawati
-  - SBY
-  - Habibi
-  - Jokowi
-  - Tegas
-  - Pantang menyerah
-  - Berani dan Suci
-  - Kesederhanaan
-  - Jakarta
-  - Padang
-  - Aceh
-  - Bekasi
   question:
   - Apakah lambang dari sila ke 3
   - Tokoh pahlawan di uang lembar 2 ribu
